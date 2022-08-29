@@ -201,7 +201,7 @@ button.hamburger.is-active .hamburger-inner:before {
 
   .menu {
     position: static;
-    padding-bottom: 0.75rem;
+    padding-bottom: 0.7rem;
     width: auto;
     flex-direction: row;
     opacity: 1;
@@ -454,6 +454,19 @@ button.btn-set .hydrated {
     right: 15%;
     top: -12px;
   }
+  .skills > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 43%);
+    justify-content: space-between;
+    align-content: center;
+  }
+  .skills .section-title {
+    grid-column: span 2;
+  }
+
+  .skills .section-description {
+    grid-column: span 2;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -497,16 +510,16 @@ button.btn-set .hydrated {
 
   .skills > .container {
     display: grid;
-    grid-template-columns: repeat(2, 43%);
+    grid-template-columns: repeat(3, 33%);
     justify-content: space-between;
     align-content: center;
   }
   .skills .section-title {
-    grid-column: span 2;
+    grid-column: span 3;
   }
 
   .skills .section-description {
-    grid-column: span 2;
+    grid-column: span 3;
   }
 
   .subset {
