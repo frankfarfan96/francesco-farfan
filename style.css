@@ -295,8 +295,9 @@ button.btn-set .hydrated {
 
 .frank {
   position: relative;
-  top: -23%;
+  top: -25%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -306,6 +307,9 @@ button.btn-set .hydrated {
   width: 270px;
   height: 260px;
   cursor: pointer;
+  margin: 0 auto;
+  z-index: 9;
+  box-shadow: 0.25rem 0.25rem 0.5rem 0.25rem rgb(0 0 0 / 10%);
 }
 
 .frank-hobbies {
@@ -314,9 +318,10 @@ button.btn-set .hydrated {
   border: medium solid var(--first-color);
   background-color: var(--white-color);
   opacity: 0.8;
-  padding: 0.7rem 0.3rem;
+  padding: 1.8rem 0.3rem 0.7rem;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
+  z-index: 8;
 }
 
 .frank-hobbies > * {
@@ -326,14 +331,15 @@ button.btn-set .hydrated {
 .frank-info {
   position: absolute;
   top: 0.4rem;
-  left: 4.2rem;
+  left: 28%;
   opacity: 0;
+  transition: all 0.5s ease-in-out;
   pointer-events: none;
 }
 
 .frank-info.is-active {
-  top: 5.4rem;
-  left: 4.2rem;
+  top: 81%;
+  left: 28%;
   opacity: 1;
   pointer-events: auto;
 }
@@ -410,7 +416,14 @@ button.btn-set .hydrated {
   flex-direction: column;
 }
 
-@media screen and (min-width: 728px) {
+@media screen and (min-width: 768px) {
+  .frank-info {
+    left: 36%;
+  }
+
+  .frank-info.is-active {
+    left: 36%;
+  }
   /* 1 Navbar*/
 
   .header > .container {
