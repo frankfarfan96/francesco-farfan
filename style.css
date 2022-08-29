@@ -399,6 +399,10 @@ button.btn-set .hydrated {
   color: var(--title-color);
 }
 
+.section-description {
+  margin-bottom: 6rem;
+}
+
 .set {
   position: absolute;
   top: -0.7rem;
@@ -411,6 +415,16 @@ button.btn-set .hydrated {
   margin: 1rem auto;
   padding: 1rem;
   text-align: center;
+  cursor: pointer;
+}
+
+.skill-card:hover {
+  animation: pulse 1s infinite;
+}
+
+.skill-card > svg {
+  width: 7rem;
+  height: 7rem;
 }
 
 .skills {
@@ -435,7 +449,19 @@ button.btn-set .hydrated {
   top: -305%;
   flex-direction: column;
 }
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
 
+  50% {
+    transform: scale(1.15);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
 @media screen and (min-width: 768px) {
   .frank-info {
     left: 36%;
