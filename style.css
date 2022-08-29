@@ -385,7 +385,7 @@ button.btn-set .hydrated {
 
 .section {
   padding: 2rem 1rem;
-  max-width: var(--max-width);
+  max-width: 100%;
   min-height: 100vh;
 }
 
@@ -395,6 +395,16 @@ button.btn-set .hydrated {
   right: 20%;
   padding-left: 1rem;
   list-style: none;
+}
+
+.service-card {
+  margin: 1rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.skills {
+  background-color: var(--white-color);
 }
 
 .subset {
@@ -437,6 +447,11 @@ button.btn-set .hydrated {
 }
 
 @media screen and (min-width: 1024px) {
+  .full-lg-screen {
+    width: 100%;
+    min-height: 120vh;
+  }
+
   /* 1 Navbar*/
   .dropdown-menu {
     position: absolute;
@@ -468,6 +483,16 @@ button.btn-set .hydrated {
   .set {
     position: relative;
     right: auto;
+  }
+
+  .skills > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 43%);
+    justify-content: space-between;
+    align-content: center;
+  }
+  .skills .section-title {
+    grid-column: span 2;
   }
 
   .subset {
