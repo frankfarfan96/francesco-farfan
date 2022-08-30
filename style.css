@@ -329,8 +329,8 @@ button.open-modal {
   border-radius: 1rem;
   height: 3rem;
   position: relative;
-  bottom: 15%;
-  left: 10%;
+  bottom: -40%;
+  left: -30%;
   cursor: pointer;
 }
 
@@ -338,8 +338,9 @@ button.btn-react {
   width: 11.5%;
   background-color: #03d6ff;
   border-color: antiquewhite;
-  bottom: 44%;
-  left: 46%;
+  position: absolute;
+  bottom: 42%;
+  left: 70%;
 }
 
 .btn-set {
@@ -452,6 +453,22 @@ button.btn-react {
   width: 50px;
 }
 
+.hover-card {
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.hover-card:hover {
+  background-color: var(--black-alpha-color);
+  transition: all 0.5s ease-in-out;
+}
+
+.hover-card:hover .js-info,
+.hover-card:hover .react-info {
+  transition: all 0.5s ease-in-out;
+  opacity: 1;
+}
+
 .logo {
   transition: 1s;
   padding-bottom: 0.5rem;
@@ -469,6 +486,8 @@ button.btn-react {
 
 .js-info {
   text-align: left;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
 }
 
 .section {
@@ -550,21 +569,24 @@ button.btn-react {
 }
 
 .react-info {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
   text-align: justify;
   /* z-index: 9; */
   font-size: 1.5rem;
   position: relative;
   top: 22%;
   color: var(--white-color);
+
   animation: introStarWars 9s linear infinite;
 }
 
 @keyframes introStarWars {
   0% {
-    transform: perspective(70vh) rotateX(15deg) translateY(-120%);
+    transform: perspective(70vh) rotateX(25deg) translateY(280%);
   }
   100% {
-    transform: perspective(80vh) rotateX(25deg) translateY(250%);
+    transform: perspective(80vh) rotateX(25deg) translateY(-200%);
   }
 }
 
@@ -583,8 +605,9 @@ button.btn-react {
 }
 @media screen and (min-width: 768px) {
   button.btn-react {
-    width: 6.5%;
-    left: 48%;
+    width: 3.5%;
+    left: 73.5%;
+    top: 42%;
   }
 
   .frank-info {
