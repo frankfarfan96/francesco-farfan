@@ -128,9 +128,14 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 90% 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 800px;
 }
 
 .container-card-2 {
+  overflow: hidden;
   background-position: 50%;
 }
 
@@ -317,6 +322,26 @@ button.btn-set .hydrated {
   font-size: 20px;
 }
 
+button.open-modal {
+  width: 20%;
+  background-color: #f4da21;
+  border-color: darkkhaki;
+  border-radius: 1rem;
+  height: 3rem;
+  position: relative;
+  bottom: 15%;
+  left: 10%;
+  cursor: pointer;
+}
+
+button.btn-react {
+  width: 11.5%;
+  background-color: #03d6ff;
+  border-color: antiquewhite;
+  bottom: 44%;
+  left: 46%;
+}
+
 .btn-set {
   background-color: var(--second-color);
   color: var(--first-color);
@@ -413,6 +438,7 @@ button.btn-set .hydrated {
   width: 100%;
   height: var(--header-height);
   background-color: var(--second-color);
+  box-shadow: 0.25rem 0.25rem 0.5rem 0.25rem rgb(0 0 0 / 10%);
 }
 
 .header > .container {
@@ -439,6 +465,10 @@ button.btn-set .hydrated {
   color: var(--first-color);
   position: relative;
   bottom: 20px;
+}
+
+.js-info {
+  text-align: left;
 }
 
 .section {
@@ -518,6 +548,26 @@ button.btn-set .hydrated {
   top: -305%;
   flex-direction: column;
 }
+
+.react-info {
+  text-align: justify;
+  /* z-index: 9; */
+  font-size: 1.5rem;
+  position: relative;
+  top: 22%;
+  color: var(--white-color);
+  animation: introStarWars 9s linear infinite;
+}
+
+@keyframes introStarWars {
+  0% {
+    transform: perspective(70vh) rotateX(15deg) translateY(-120%);
+  }
+  100% {
+    transform: perspective(80vh) rotateX(25deg) translateY(250%);
+  }
+}
+
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -532,6 +582,11 @@ button.btn-set .hydrated {
   }
 }
 @media screen and (min-width: 768px) {
+  button.btn-react {
+    width: 6.5%;
+    left: 48%;
+  }
+
   .frank-info {
     left: 36%;
   }
