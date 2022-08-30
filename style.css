@@ -106,7 +106,7 @@ p {
   display: none;
 }
 .carousel label {
-  border: medium solid var(--gray-dark-color);
+  border: medium solid rgb(125 0 0);
   border-radius: 50%;
   margin: 0 0.25rem;
   display: inline-block;
@@ -149,7 +149,7 @@ p {
 
 #slide-1:checked ~ .slides-nav label#dot-1,
 #slide-2:checked ~ .slides-nav label#dot-2 {
-  background-color: var(--gray-dark-color);
+  background-color: var(--first-color);
 }
 
 /**************  HeroImage  ************/
@@ -278,7 +278,43 @@ button.hamburger.is-active .hamburger-inner:before {
     background-color: transparent;
   }
 }
+/**************  Modal  ************/
+.modal {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black-alpha-color);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s;
+}
 
+.modal-content {
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.modal-close svg {
+  width: 3rem;
+  height: 3rem;
+  fill: var(--first-color);
+}
+
+.modal[id|="modal"]:target {
+  opacity: 1;
+  pointer-events: auto;
+}
 /**************  Utilities  ************/
 
 .container {
@@ -485,6 +521,7 @@ button.btn-react {
 }
 
 .js-info {
+  font-size: 1.2rem;
   text-align: left;
   opacity: 0;
   transition: all 0.5s ease-in-out;
