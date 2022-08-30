@@ -93,13 +93,65 @@ p {
 }
 
 /**************  Components  ************/
+/**************  Carousel  ************/
+.carousel {
+  margin: 2rem auto;
+  padding: 2rem 0;
+  max-width: 800px;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.carousel input {
+  display: none;
+}
+.carousel label {
+  border: medium solid var(--gray-dark-color);
+  border-radius: 50%;
+  margin: 0 0.25rem;
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  cursor: pointer;
+}
+.carousel .slides {
+  padding-left: 0;
+  width: 200%;
+  display: flex;
+  list-style: none;
+  transition: transform 0.5s ease-in-out;
+  height: 40vh;
+}
+.container-card,
+.container-card-2 {
+  background-image: var(--img-slide);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 90% 60%;
+}
+
+.container-card-2 {
+  background-position: 50%;
+}
+
+#slide-1:checked ~ .slides {
+  transform: translateX(0%);
+}
+
+#slide-2:checked ~ .slides {
+  transform: translateX(-50%);
+}
+
+#slide-1:checked ~ .slides-nav label#dot-1,
+#slide-2:checked ~ .slides-nav label#dot-2 {
+  background-color: var(--gray-dark-color);
+}
 
 /**************  HeroImage  ************/
 .hero-image-content {
   width: 100%;
   min-width: 320px;
   position: relative;
-  top: -7rem;
 }
 
 .hero-image {
@@ -242,6 +294,10 @@ button.hamburger.is-active .hamburger-inner:before {
   padding-left: 1.3rem;
 }
 
+.top-7rem {
+  top: -7rem;
+}
+
 /**************  Site Styles  ************/
 
 /* 1 Navbar*/
@@ -270,27 +326,6 @@ button.btn-set .hydrated {
   padding: 0.75rem;
 }
 
-.carousel {
-  margin: 2rem auto;
-  padding: 2rem 0;
-  max-width: 800px;
-  text-align: center;
-  overflow-x: hidden;
-}
-.carousel .slides {
-  padding-left: 0;
-  width: 200%;
-  display: flex;
-  list-style: none;
-  height: 40vh;
-}
-
-.container-card {
-  background-image: var(--img-slide);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 90% 60%;
-}
 .dropdown {
   position: relative;
 }
@@ -432,6 +467,11 @@ button.btn-set .hydrated {
   right: 20%;
   padding-left: 1rem;
   list-style: none;
+}
+
+.slides-nav {
+  position: relative;
+  top: -20px;
 }
 
 .skills > .container {
