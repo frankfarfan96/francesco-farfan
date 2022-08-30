@@ -168,6 +168,7 @@ button.hamburger.is-active .hamburger-inner:before {
 
 .menu.is-active {
   opacity: 1;
+  margin-bottom: -0.1rem;
   pointer-events: auto;
 }
 
@@ -269,6 +270,27 @@ button.btn-set .hydrated {
   padding: 0.75rem;
 }
 
+.carousel {
+  margin: 2rem auto;
+  padding: 2rem 0;
+  max-width: 800px;
+  text-align: center;
+  overflow-x: hidden;
+}
+.carousel .slides {
+  padding-left: 0;
+  width: 200%;
+  display: flex;
+  list-style: none;
+  height: 40vh;
+}
+
+.container-card {
+  background-image: var(--img-slide);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 90% 60%;
+}
 .dropdown {
   position: relative;
 }
@@ -352,6 +374,7 @@ button.btn-set .hydrated {
   bottom: 0;
   z-index: 999;
   padding: 0.5rem;
+  margin-bottom: -0.1rem;
   width: 100%;
   height: var(--header-height);
   background-color: var(--second-color);
@@ -411,6 +434,12 @@ button.btn-set .hydrated {
   list-style: none;
 }
 
+.skills > .container {
+  display: grid;
+  grid-template-columns: repeat(1, 99%);
+  justify-content: space-between;
+  align-content: center;
+}
 .skill-card {
   margin: 1rem auto;
   padding: 1rem;
@@ -481,10 +510,7 @@ button.btn-set .hydrated {
     top: -12px;
   }
   .skills > .container {
-    display: grid;
     grid-template-columns: repeat(2, 43%);
-    justify-content: space-between;
-    align-content: center;
   }
   .skills .section-title {
     grid-column: span 2;
@@ -535,10 +561,7 @@ button.btn-set .hydrated {
   }
 
   .skills > .container {
-    display: grid;
     grid-template-columns: repeat(3, 33%);
-    justify-content: space-between;
-    align-content: center;
   }
   .skills .section-title {
     grid-column: span 3;

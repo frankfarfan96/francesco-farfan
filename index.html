@@ -509,7 +509,61 @@
     </section>
 
     <section id="portafolio" class="portfolio">
-      <h2>Proyectos</h2>
+      <article
+        class="hero-image"
+        style="
+          --hero-image: url('assets/3-projects/img-bg.jpg');
+          --hero-attachment: scroll;
+        "
+      >
+        <aside
+          class="hero-image-opacity"
+          style="--hero-opacity-color: var(--white-alpha-color)"
+        >
+          <div class="hero-image-content container">
+            <h2 class="section-title">Mis Proyectos</h2>
+            <article
+              class="carousel"
+              style="--carousel-bg-color: var(--white-alpha-color)"
+            >
+              <input type="radio" name="slides" id="slide-1" checked />
+              <input type="radio" name="slides" id="slide-2" />
+              <article class="slides">
+                <div
+                  class="slide container-card"
+                  style="--img-slide: url('assets/3-projects/img-js-bg.jpg')"
+                >
+                  <blockquote>
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iste dolore velit aspernatur laudantium tempore magnam
+                    cumque eligendi laborum dignissimos molestiae, tempora
+                    earum? Architecto laudantium omnis natus saepe hic ad
+                    exercitationem."
+                  </blockquote>
+                  <button>JS</button>
+                </div>
+                <div
+                  class="slide container-card"
+                  style="--img-slide: url('assets/3-projects/img-react-bg.jpg')"
+                >
+                  <blockquote>
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iste dolore velit aspernatur laudantium tempore magnam
+                    cumque eligendi laborum dignissimos molestiae, tempora
+                    earum? Architecto laudantium omnis natus saepe hic ad
+                    exercitationem."
+                  </blockquote>
+                  <button>React</button>
+                </div>
+              </article>
+              <aside class="slides-nav">
+                <label for="slide-1" id="dot-1"></label>
+                <label for="slide-2" id="dot-2"></label>
+              </aside>
+            </article>
+          </div>
+        </aside>
+      </article>
     </section>
 
     <section id="contacto" class="contact">
