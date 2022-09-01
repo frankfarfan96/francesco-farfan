@@ -375,6 +375,69 @@ button.hamburger.is-active .hamburger-inner:before {
   opacity: 1;
   pointer-events: auto;
 }
+
+/**************  Social Media  ***********/
+.social-media {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.social-media a {
+  position: relative;
+  list-style: none;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white-color);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.social-media a .fa {
+  font-size: 3rem;
+  -webkit-text-stroke: 2px var(--clr);
+  color: transparent;
+}
+
+.social-media a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  border-bottom: 0.3rem solid var(--clr);
+  transition: all 0.5s ease-in-out;
+  font-family: fontAwesome;
+  text-align: center;
+  line-height: 5rem;
+  font-size: 3rem;
+  color: var(--clr);
+}
+
+.social-media a:hover::before {
+  height: 100%;
+}
+
+.social-media a:nth-child(1):before {
+  content: "\f003";
+}
+
+.social-media a:nth-child(2):before {
+  content: "\f09b";
+}
+
+.social-media a:nth-child(3):before {
+  content: "\f08c";
+}
+
+.social-media a:nth-child(4):before {
+  content: "\f16d";
+}
+
 /**************  Utilities  ************/
 
 .container {
@@ -608,6 +671,10 @@ button.btn-react {
   color: var(--first-color);
   position: relative;
   bottom: 20px;
+}
+
+.img-hand {
+  display: none;
 }
 
 .js-info {
