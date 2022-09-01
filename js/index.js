@@ -16,7 +16,6 @@
   });
 
   document.querySelectorAll(".content-summary").forEach((content) => {
-    console.log(content);
     content.addEventListener("click", (e) => {
       content.classList.toggle("active");
     });

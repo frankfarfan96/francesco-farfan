@@ -472,6 +472,12 @@ button.btn-react {
   text-align: center;
 }
 
+.contact {
+  background-color: var(--white-color);
+  height: 93vh;
+  padding: 1rem 0;
+}
+
 .dropdown {
   position: relative;
 }
