@@ -608,6 +608,12 @@ button.btn-react {
   padding: 0.75rem;
 }
 
+.cards {
+  z-index: 9;
+  position: relative;
+  top: -3rem;
+}
+
 .content-description b {
   color: var(--first-color);
   display: inline-block;
