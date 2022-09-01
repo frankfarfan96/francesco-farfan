@@ -101,7 +101,8 @@ p {
   line-height: 1.6;
 }
 
-/*DE SISTEMAR DONDE VAN A IR CADA CSS*/
+/**************  Components  ************/
+/**************  Accordion  ***********/
 .accordion {
   max-width: 100%;
 }
@@ -139,7 +140,7 @@ p {
 }
 
 .modal .accordion .content-summary.active ~ * {
-  height: 150px;
+  height: auto;
   padding: 2rem;
 }
 
@@ -148,9 +149,6 @@ p {
   transform: rotate(180deg);
 }
 
-/*****************************************/
-
-/**************  Components  ************/
 /**************  Carousel  ************/
 .carousel {
   margin: 2rem auto;
@@ -452,6 +450,28 @@ button.btn-react {
   padding: 0.75rem;
 }
 
+.content-description b {
+  color: var(--first-color);
+  display: inline-block;
+  margin: 1.5rem auto 0.3rem;
+}
+
+.content-info {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-auto-rows: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.content-info b {
+  color: var(--first-color);
+}
+
+.content-info small {
+  text-align: center;
+}
+
 .dropdown {
   position: relative;
 }
@@ -746,6 +766,21 @@ button.btn-react {
 }
 
 @media screen and (min-width: 1024px) {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+  }
+
+  .content-description {
+    grid-column: span 3;
+  }
+
+  .content-info {
+    align-self: center;
+    gap: 1.5rem;
+    grid-template-columns: 40% 60%;
+  }
+
   .full-lg-screen {
     width: 100%;
     min-height: 120vh;
