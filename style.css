@@ -22,7 +22,7 @@
   --header-height: 4rem;
 }
 
-/**************  Rer   ***********/
+/**************  Reset   ***********/
 html {
   background-color: var(--second-color);
   box-sizing: border-box;
@@ -51,6 +51,15 @@ a {
 
 a:hover {
   opacity: 0.75;
+}
+
+details {
+  --accordion-min-height: 300px;
+  --accordion-max-height: 300px;
+  border: thin solid var(--first-color);
+  margin: 1rem auto;
+  overflow: hidden;
+  background-color: var(--white-color);
 }
 
 h1 {
@@ -91,6 +100,55 @@ img {
 p {
   line-height: 1.6;
 }
+
+/*DE SISTEMAR DONDE VAN A IR CADA CSS*/
+.accordion {
+  max-width: 100%;
+}
+
+.accordion .content-details {
+  position: relative;
+  margin: 5rem 2rem 1.5rem;
+}
+
+.accordion .content-details .content-summary {
+  position: relative;
+  display: block;
+  padding: 1.5rem;
+  background: var(--first-color);
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.accordion .content-details .content-summary::before {
+  content: "➕";
+  position: absolute;
+  top: 28%;
+  right: 2rem;
+  font-size: 1.5em;
+  transition: transform 0.2s ease-in-out;
+}
+
+.accordion .content-details .content {
+  position: relative;
+  background: #fff;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.modal .accordion .content-summary.active ~ * {
+  height: 150px;
+  padding: 2rem;
+}
+
+.accordion .content-details .content-summary.active::before {
+  content: "➖";
+  transform: rotate(180deg);
+}
+
+/*****************************************/
 
 /**************  Components  ************/
 /**************  Carousel  ************/
@@ -296,7 +354,11 @@ button.hamburger.is-active .hamburger-inner:before {
 }
 
 .modal-content {
+  background-color: var(--white-color);
+  width: 90%;
+  height: 90%;
   position: relative;
+  overflow-y: scroll;
 }
 
 .modal-close {
@@ -322,7 +384,9 @@ button.hamburger.is-active .hamburger-inner:before {
   margin-right: auto;
   max-width: var(--max-width);
 }
-
+.h3-summary {
+  display: inline;
+}
 .gap-03 {
   gap: 0.3rem;
 }
@@ -525,6 +589,11 @@ button.btn-react {
   text-align: left;
   opacity: 0;
   transition: all 0.5s ease-in-out;
+}
+
+.projects-modal {
+  background-color: var(--white-color);
+  margin: 5rem 1rem;
 }
 
 .section {
