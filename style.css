@@ -208,6 +208,93 @@ p {
   background-color: var(--first-color);
 }
 
+/**************  Form  ************/
+.contact-form {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 800px;
+}
+
+.contact-form > * {
+  padding: 0.5rem;
+  margin: 1rem auto;
+  display: block;
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-size: 0.85rem;
+  font-family: var(--font);
+}
+
+.contact-form input {
+  border: 0;
+  border-bottom: thin solid var(--gray-dark-color);
+  padding-left: 0;
+}
+
+.contact-form textarea {
+  border: thin solid var(--gray-dark-color);
+  resize: none;
+}
+
+.contact-form input[type="submit"] {
+  margin-top: 0;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.contact-form input[type="submit"]:hover {
+  opacity: 0.75;
+}
+
+.contact-form *::placeholder {
+  color: var(--gray-dark-color);
+}
+
+.contact-form-response {
+  padding: 1rem;
+  width: 400px;
+  text-align: center;
+  background-color: var(--white-color);
+}
+
+.contact-form-response svg {
+  margin-top: 2rem;
+  width: 4rem;
+  height: 4rem;
+  fill: var(--first-color);
+}
+
+.modal#gracias:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem;
+    font-family: var(--font);
+  }
+
+  .contact-form textarea,
+  .contact-form-loader {
+    grid-column: span 2;
+  }
+
+  .contact-form input[type="submit"] {
+    margin-left: 0;
+  }
+}
+
 /**************  HeroImage  ************/
 .hero-image-content {
   width: 100%;
@@ -359,7 +446,11 @@ button.hamburger.is-active .hamburger-inner:before {
   overflow-y: scroll;
 }
 
-.modal-close {
+.modal-content-form {
+  position: relative;
+}
+
+.modal-content-form .modal-close {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -452,6 +543,10 @@ button.hamburger.is-active .hamburger-inner:before {
   gap: 0.3rem;
 }
 
+.section-title.margin-top-5 {
+  margin-top: 5rem;
+}
+
 .none {
   display: none;
 }
@@ -537,8 +632,15 @@ button.btn-react {
 
 .contact {
   background-color: var(--white-color);
-  height: 93vh;
+  height: auto;
   padding: 1rem 0;
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 100% 0%);
+  padding: 4.5rem 1rem 2rem 1rem;
+  margin-bottom: 6rem;
 }
 
 .dropdown {
@@ -616,6 +718,14 @@ button.btn-react {
   pointer-events: auto;
 }
 
+.footer {
+  margin-bottom: var(--header-height);
+  padding: 0.5rem;
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--third-color);
+}
+
 /* 1 Navbar*/
 
 .header {
@@ -658,6 +768,18 @@ button.btn-react {
   opacity: 1;
 }
 
+.img-hand {
+  position: absolute;
+  right: 0;
+}
+
+.js-info {
+  font-size: 1.2rem;
+  text-align: left;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
 .logo {
   transition: 1s;
   padding-bottom: 0.5rem;
@@ -671,17 +793,6 @@ button.btn-react {
   color: var(--first-color);
   position: relative;
   bottom: 20px;
-}
-
-.img-hand {
-  display: none;
-}
-
-.js-info {
-  font-size: 1.2rem;
-  text-align: left;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
 }
 
 .projects-modal {
@@ -802,13 +913,21 @@ button.btn-react {
     transform: scale(1);
   }
 }
+@media screen and (min-width: 583px) {
+  .contact-cards {
+    margin-bottom: 9rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   button.btn-react {
     width: 3.5%;
     left: 73.5%;
     top: 42%;
   }
-
+  .contact-cards {
+    margin-bottom: 13rem;
+  }
   .frank-info {
     left: 36%;
   }
@@ -844,6 +963,9 @@ button.btn-react {
     grid-template-columns: repeat(2, 45%);
   }
 
+  .contact-cards {
+    margin-bottom: 13rem;
+  }
   .content-description {
     grid-column: span 3;
   }
@@ -883,6 +1005,9 @@ button.btn-react {
     justify-content: space-between;
   }
 
+  .footer {
+    margin-bottom: 0;
+  }
   .logo {
     padding-bottom: 0;
   }
