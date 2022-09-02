@@ -75,7 +75,6 @@ window.addEventListener("scroll", (e) => {
   console.log(long);
   if (long <= height) {
     $image.classList.add("apere");
-    $image.classList.add("transform_right");
   } else {
     $image.classList.remove("apere");
   }

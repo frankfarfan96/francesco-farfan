@@ -558,8 +558,19 @@ button.hamburger.is-active .hamburger-inner:before {
 .top-7rem {
   top: -7rem;
 }
-.transform_right {
-  transform: translateX(100%);
+
+.transform_top_m {
+  transform: translateY(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  .transform_right {
+    transform: translateX(100%);
+  }
+
+  .transform_top_m {
+    transform: none;
+  }
 }
 
 /**************  Site Styles  ************/
