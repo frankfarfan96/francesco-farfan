@@ -564,9 +564,9 @@ button.hamburger.is-active .hamburger-inner:before {
 }
 
 @media screen and (min-width: 768px) {
-  .transform_right {
+  /* .transform_right {
     transform: translateX(100%);
-  }
+  } */
 
   .transform_top_m {
     transform: none;
@@ -592,25 +592,29 @@ button.btn-set .hydrated {
   font-size: 20px;
 }
 
+a.open-modal-container {
+  position: relative;
+  bottom: -40%;
+  left: -30%;
+}
+
 button.open-modal {
   width: 20%;
   background-color: #f4da21;
   border-color: darkkhaki;
   border-radius: 1rem;
   height: 3rem;
-  position: relative;
-  bottom: -40%;
-  left: -30%;
+
   cursor: pointer;
 }
 
 button.btn-react {
-  width: 11.5%;
+  width: 6.5%;
   background-color: #03d6ff;
   border-color: antiquewhite;
   position: absolute;
-  bottom: 42%;
-  left: 70%;
+  bottom: 43.3%;
+  left: 72.5%;
 }
 
 .btn-set {
@@ -981,6 +985,9 @@ img.apere {
 
   .skills .section-description {
     grid-column: span 2;
+  }
+  .transform_right {
+    transform: translateX(100%);
   }
 }
 
