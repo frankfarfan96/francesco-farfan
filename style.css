@@ -462,6 +462,11 @@ button.hamburger.is-active .hamburger-inner:before {
   fill: var(--first-color);
 }
 
+.modal-close {
+  float: right;
+  margin: 0.5rem;
+}
+
 .modal[id|="modal"]:target {
   opacity: 1;
   pointer-events: auto;
@@ -551,6 +556,10 @@ button.hamburger.is-active .hamburger-inner:before {
   display: none;
 }
 
+.margin-top-5 {
+  margin-top: 5rem;
+}
+
 .pad-left {
   padding-left: 1.3rem;
 }
@@ -630,6 +639,10 @@ button.btn-react {
   z-index: 9;
   position: relative;
   top: -3rem;
+}
+
+.content img {
+  border: thin solid var(--first-color);
 }
 
 .content-description b {
