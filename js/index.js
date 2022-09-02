@@ -65,3 +65,18 @@
       });
   });
 })(document);
+
+/*********** Scroll Fade Effect *********/
+window.addEventListener("scroll", (e) => {
+  const $image = document.querySelector(".img-hand");
+  const height = window.innerHeight / 1.3;
+  console.log(height);
+  const long = $image.getBoundingClientRect().top;
+  console.log(long);
+  if (long <= height) {
+    $image.classList.add("apere");
+    $image.classList.add("transform_right");
+  } else {
+    $image.classList.remove("apere");
+  }
+});

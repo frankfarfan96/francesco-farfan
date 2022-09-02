@@ -558,6 +558,9 @@ button.hamburger.is-active .hamburger-inner:before {
 .top-7rem {
   top: -7rem;
 }
+.transform_right {
+  transform: translateX(100%);
+}
 
 /**************  Site Styles  ************/
 
@@ -774,7 +777,14 @@ button.btn-react {
   opacity: 1;
 }
 
+img.apere {
+  opacity: 1;
+  transform: none;
+}
+
 .img-hand {
+  opacity: 0;
+  transition: all 1.3s;
   position: absolute;
   right: 0;
 }
