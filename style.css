@@ -64,17 +64,17 @@ details {
 
 h1 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 h2 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 h3 {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
 }
 
 h4 {
@@ -680,6 +680,11 @@ button.btn-react {
   margin-bottom: 6rem;
 }
 
+.dark-theme-btn {
+  font-size: 1.9rem;
+  padding: 0;
+}
+
 .dropdown {
   position: relative;
 }
@@ -1083,4 +1088,41 @@ img.apere {
   .languages {
     left: -60%;
   }
+}
+/***********************************/
+.dark-mode {
+  background-color: #000;
+  color: var(--white-color);
+}
+
+.dark-mode h2,
+.dark-mode h3 {
+  color: var(--white-color);
+}
+
+h1.dark-mode {
+  background-color: rgba(255, 255, 255, 0);
+  color: var(--gray-dark-color);
+}
+
+h2.dark-mode {
+  color: var(--white-color);
+  background-color: inherit;
+}
+
+div.hero-image-title a.dark-mode {
+  background-color: var(--first-color);
+  color: #000;
+}
+
+input.dark-mode,
+textarea.dark-mode,
+article a.dark-mode {
+  background-color: #8e8e8e80;
+  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.179);
+}
+
+div.content.dark-mode {
+  background-color: var(--gray-color) !important;
+  color: var(--black-color) !important;
 }

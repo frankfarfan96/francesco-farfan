@@ -1,3 +1,6 @@
+/******** Dark Mode ********/
+import darkTheme from "./theme-dark.js";
+darkTheme(".dark-theme-btn", "dark-mode", "dark-mode-white", "dark-mode-gray");
 /******** Menu & Frank-Info & Accordion********/
 
 ((d) => {

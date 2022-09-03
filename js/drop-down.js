@@ -4,7 +4,7 @@ document.addEventListener("click", (e) => {
   const isDropdownButton2 = e.target.matches("[data-dropdown-two] *");
   if (!isDropdownButton && e.target.closest("[data-dropdown]") != null) return;
 
-  console.log($dropdown);
+  // console.log($dropdown);
 
   let currentDropdown;
   let currentDropdown2;
@@ -18,7 +18,7 @@ document.addEventListener("click", (e) => {
     currentDropdown2 = e.target.closest("[data-dropdown-two]");
     currentDropdown2.classList.toggle("active");
     currentDropdown.classList.add("active");
-    console.log(currentDropdown2);
+    // console.log(currentDropdown2);
   }
 
   document
