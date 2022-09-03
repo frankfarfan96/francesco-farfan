@@ -70,9 +70,9 @@
 window.addEventListener("scroll", (e) => {
   const $image = document.querySelector(".img-hand");
   const height = window.innerHeight / 1.3;
-  console.log(height);
+  // console.log(height);
   const long = $image.getBoundingClientRect().top;
-  console.log(long);
+  // console.log(long);
   if (long <= height) {
     $image.classList.add("apere");
   } else {
