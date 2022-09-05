@@ -116,6 +116,7 @@ p {
   position: relative;
   display: block;
   padding: 1.5rem;
+  padding-right: 4rem;
   background: var(--first-color);
   color: var(--white-color);
   cursor: pointer;
@@ -922,9 +923,17 @@ img.apere {
 
 .languages {
   position: absolute;
-  left: -62%;
-  top: -305%;
+  left: -60%;
+  top: -268%;
   flex-direction: column;
+}
+
+.lang {
+  width: 50%;
+  padding: 0.8rem;
+  height: 2.5rem;
+  border: thin solid;
+  text-align: center;
 }
 
 .react-info {
@@ -1082,7 +1091,7 @@ img.apere {
 
   .subset {
     top: auto;
-    right: -90%;
+    right: -75%;
   }
   /*Va dopo subset per l'effetto a cascado di CSS*/
   .languages {
@@ -1119,10 +1128,18 @@ input.dark-mode,
 textarea.dark-mode,
 article a.dark-mode {
   background-color: #8e8e8e80;
-  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.179);
+  box-shadow: 0 9px 35px rgba(255, 255, 255, 25%);
 }
 
 div.content.dark-mode {
   background-color: var(--gray-color) !important;
   color: var(--black-color) !important;
+}
+
+.modal.dark-mode {
+  background-color: #00000096;
+}
+
+.modal.dark-mode .modal-content-form .contact-form-response {
+  background-color: var(--gray-dark-color);
 }

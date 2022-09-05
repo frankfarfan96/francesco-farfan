@@ -29,10 +29,10 @@
         </h2>
 
         <nav class="menu">
-          <a href="#inicio">Homepage</a>
-          <a href="#habilidades">Mis Habilidades</a>
-          <a href="#portafolio">Projectos</a>
-          <a href="#contacto">Contacto</a>
+          <a class="home-page" href="#inicio">Homepage</a>
+          <a class="my-skills" href="#habilidades">Mis Habilidades</a>
+          <a class="projects" href="#portafolio">Projectos</a>
+          <a class="my-contact" href="#contacto">Contacto</a>
         </nav>
 
         <!-- 
@@ -50,9 +50,9 @@
               <li class="dropdown d2"  data-dropdown-two>
                 <button class="btn-set" data-dropdown-button>LANG</button>
                 <ul class="subset languages dropdown-menu">
-                  <li><button class="btn-set">Eng</button></li>
-                  <li><button class="btn-set">Ita</button></li>
-                  <li><button class="btn-set">Esp</button></li>
+                  <a href="#" language="english" class="lang btn-set">ENG</a>
+                  <a href="#" language="italian" class="lang btn-set">ITA</a>
+                  <a href="#" language="spanish" class="lang btn-set active">ESP</a>
                 </ul>
               </li>
             </ul>
@@ -82,14 +82,14 @@
           <div class="container frank-container">
             <div class="hero-image-content top-7rem">
               <h1
-                class="hero-image-title"
+                class="hero-image-title hola-mundo"
                 style="--hero-text-color: var(--white-color)"
                 data-dark
               >
                 Hola Mundo! <br />
                 Bienvenid@ a mi sitio
               </h1>
-              <a href="#contacto" class="btn">CONTACTAME</a>
+              <a href="#contacto" class="btn my-contact-btn-1">Contáctame</a>
             </div>
             <div class="frank">
               <img
@@ -102,16 +102,16 @@
                   <li>
                     <u><b> + Hobbies :</b></u>
                   </li>
-                  <li><b>Meditar 🧘‍♀️</b></li>
-                  <li><b>Leer 📚</b></li>
+                  <b> <li class="mindfullness-lang">Meditación 🧘‍♀️</li></b>
+                 <b>  <li class="reed-lang">Leer 📚</li></b>
                   <li><b>MMA 🥊</b></li>
-                  <li><b>Calistenia 💪</b></li>
-                  <li><b>Videojuegos 🎮</b></li>
+                  <b><li class="calisthenics-lang">Calistenia 💪</li></b>
+                  <b><li class="videogames-lang">Videojuegos 🎮</li></b>
                   <li>
                     <hr />
                     <b
                       ><a
-                        class="pad-left"
+                        class="pad-left cv-lang"
                         href="#"
                         target="_blank"
                         rel="noopener"
@@ -129,19 +129,10 @@
 
     <section id="habilidades" class="skills section" data-dark>
       <div class="container full-lg-screen">
-        <h2 class="section-title">Mis Habilidades</h2>
-        <p class="section-description">
-          En el 2020 empeze un curso bienal como FullStack development, donde
-          conoci el mundo del desarrollo web y diversas tecnolodias del lado
-          frontend y tambien backend. Despues de un anio y medio decidi empezar
-          mi camino como autodidacta y focalizarme en el lado Frontend y en
-          perfeccionar sus tecnologias.<br />
-          Creo en la formacion continua y mi meta es volverme Software
-          Engeniere. 🤓
-          <br>
-          <br>
-          Elenco de las tecnologias que se :
-        </p>
+        <h2 class="section-title skills-lang">Mis Habilidades</h2>
+        <p class="section-description my-presentation-lang">
+          En el 2020 empezé un curso bienal como FullStack development, donde conocí el mundo del desarrollo web y diversas tecnologías del lado frontend y backend. Después de un año y medio decidí empezar mi camino como autodidacta y focalizarme en el lado Frontend y en perfeccionar sus tecnologías. Creo en la formación continua y mi meta es volverme Software Engeniere. 🤓 
+        </p>  
 
         <article class="skill-card">
           <svg
@@ -534,7 +525,7 @@
           style="--hero-opacity-color: var(--white-alpha-color)"
         >
           <div class="hero-image-content container">
-            <h2 class="section-title" data-dark>Mis Proyectos</h2>
+            <h2 class="section-title projects-lang" data-dark>Mis Proyectos</h2>
             <article
               class="carousel"
               style="--carousel-bg-color: var(--white-alpha-color)"
@@ -547,16 +538,13 @@
                   style="--img-slide: url('assets/3-projects/img-js-bg.jpg')"
                 >
                   <div class="hover-card">
+                    <b class="">
                     <blockquote class="js-info">
-                      <b>
-                        En estos proyectos que desarrolle usando JavaScript
-                        mejore tambien la parte de maquetacion web usando HTML y
-                        CSS.
-                        Todos los proyectos son 
-                        <br>
-                        responsive.
+                      
+                        Estos proyectos los desarrollé usando JavaScript y para la parte de maquetación web usé HTML y CSS. Todos los proyectos son responsive.
+                         
+                      </blockquote>
                       </b>
-                    </blockquote>
                     <a class="open-modal-container" href="#modal-1">
                       <button class="open-modal open-modal-js">JS</button>
                     </a>
@@ -605,14 +593,14 @@
           <h3 class="section-title margin-top-5">JavaScript</h3>
           <article class="accordion">
             <div class="content-details">
-              <span class="content-summary"><b>Ejercicios DOM</b></span>
+              <span class="content-summary first-title-js"><b>Ejercicios DOM</b></span>
               <div class="content" data-dark>
                 <img src="./assets/4-modals/js-dom-exe.PNG" alt="MyWeb" />
                 <aside class="content-info">
-                  <small><b>Fecha</b></small>
-                  <small>--/04/2022</small>
-                  <small><b>Tipo</b></small>
-                  <small>Sitio para mis practicas con el DOM</small>
+                  <small ><b class="date1-modal">Fecha</b></small>
+                  <small>xx/04/2022</small>
+                  <small><b class="type1-modal">Tipo</b></small>
+                  <small class="res-type1-modal">Sitio para mis practicas con el DOM</small>
                   <small><b>Repo</b></small>
                   <small>
                     <a href="https://github.com/frankfarfan96/DOM-exercises" target="_blank" rel="noopener">
@@ -624,8 +612,8 @@
                       
                 </aside>
                 <aside class="content-description">
-                  <small><b>Descripcion</b></small>
-                  <p></p>
+                  <small><b class="desc1-modal">Descripcion</b></small>
+                  <p class="res-desc1-modal"> 
                    En este sitio me ejercite en el dominio del DOM gracias JS y sus eventos, hize 15 secciones donde
 implemente un ejercicio diverso por cada una (por ejemplo, un reloj digital, eventos del teclado,
 deteccion de la camara web, sorteo digital, filtros de busqueda, etc). Implemente tambien un menu
@@ -639,14 +627,14 @@ hamburguesa y mas ejercicios del manejo del DOM.
 
            <article class="accordion">
             <div class="content-details">
-              <span class="content-summary"><b>SPA con WordPress como Backend</b> </span>
+              <span class="content-summary second-title-js"><b>SPA con WordPress como Backend</b> </span>
               <div class="content" data-dark>
                 <img src="./assets/4-modals/spa-backend-wordpress.PNG" alt="MyWeb" />
                 <aside class="content-info">
-                  <small><b>Fecha</b></small>
-                  <small>--/05/2022</small>
-                  <small><b>Tipo</b></small>
-                  <small>SPA (Single Page Application)</small>
+                  <small ><b class="date2-modal">Fecha</b></small>
+                  <small>xx/05/2022</small>
+                  <small><b class="type2-modal">Tipo</b></small>
+                  <small class="res-type2-modal">SPA (Single Page Application)</small>
                   <small><b>Repo</b></small>
                   <small>
                     <a href="https://github.com/frankfarfan96/spa-backend-wordpress" target="_blank" rel="noopener">
@@ -658,17 +646,12 @@ hamburguesa y mas ejercicios del manejo del DOM.
                       
                 </aside>
                 <aside class="content-description">
-                  <small><b>Descripcion</b></small>
-                  <p></p>
+                  <small><b class="desc2-modal">Descripcion</b></small>
+                  <p class="res-desc2-modal">
                     En este proyecto no me enfoque tanto en la parte de la maquetacion y estilos, es una pagina minimalista pero responsiva. 
-Mi enfoque principal fue en el consumo de la informacion con Ajax para distribuirla en esta SPA. Los datos vienen consumidos desde cualquier blog hecho con wordpress (en mi caso use CCS-TRICKS)
-<br>
-<br>
+Mi enfoque principal fue en el consumo de la informacion con Ajax para distribuirla en esta SPA. Los datos vienen consumidos desde cualquier blog hecho con wordpress (en mi caso use CCS-TRICKS) 
 Los articulos principales estan en la home, la cuel presenta el infinite scroll.
-La segunda es una seccion de busqueda de viejos articulos y en la ultima implemente un formulario.
-<br>Tambien enlace un link hacia un curso
-online gratiuto en espaniol donde aprendi y mejore mis conocimientos en JS.</p>
-                  </p>
+La segunda es una seccion de busqueda de viejos articulos y en la ultima implemente un formulario. Tambien enlace un link hacia un curso online gratiuto en espaniol donde aprendi y mejore mis conocimientos en JS.</p> 
                 </aside>
               </div>
             </div>
@@ -676,14 +659,14 @@ online gratiuto en espaniol donde aprendi y mejore mis conocimientos en JS.</p>
 
            <article class="accordion">
             <div class="content-details">
-              <span class="content-summary"> <b>Mi Sitio Web</b></span>
+              <span class="content-summary third-title-js"> <b>Mi Sitio Web</b></span>
               <div class="content"  data-dark>
                 <img src="./assets/4-modals/myweb.PNG" alt="MyWeb" />
                 <aside class="content-info">
-                  <small><b>Fecha</b></small>
-                  <small>03/09/2022</small>
-                  <small><b>Tipo</b></small>
-                  <small>Mi Portfolio</small>
+                  <small ><b class="date3-modal">Fecha</b></small>
+                  <small>04/09/2022</small>
+                  <small><b class="type3-modal">Tipo</b></small>
+                  <small class="res-type3-modal">Mi Portfolio</small>
                   <small><b>Repo</b></small>
                   <small>
                     <a href="https://github.com/frankfarfan96/francesco-farfan" target="_blank" rel="noopener">
@@ -695,8 +678,8 @@ online gratiuto en espaniol donde aprendi y mejore mis conocimientos en JS.</p>
                       
                 </aside>
                 <aside class="content-description">
-                  <small><b>Descripcion</b></small>
-                  <p></p>
+                  <small><b class="desc3-modal">Descripcion</b></small>
+                  <p class="res-desc3-modal"> 
                     Este ha sido mi ultimo proyecto realizado con JS, donde me focalize en hacer una maquetacion responsiva y etilizada a mi modo. Trate de no usar JS en los casos donde podia hacerlos con CSS, como en la parte de las Slides. Lo hize tambien multilingue y con los temas oscuro y claro.</p>
                   </p>
                 </aside>
@@ -709,7 +692,7 @@ online gratiuto en espaniol donde aprendi y mejore mis conocimientos en JS.</p>
 
       <article class="modal" id="modal-2">
         <div class="modal-content"  data-dark>
-          <a href="#close" class="modal-close">
+          <a href="#close" class="modal-close ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -724,14 +707,14 @@ online gratiuto en espaniol donde aprendi y mejore mis conocimientos en JS.</p>
           <h3 class="section-title margin-top-5">React</h3>
           <article class="accordion">
             <div class="content-details">
-              <span class="content-summary"><b>Movies y series con React y Redux</b></span>
+              <span class="content-summary"><b class="first-title-react">Movies y series con React y Redux</b></span>
               <div class="content" data-dark>
-                <img src="./assets/4-modals/" alt="Cooming Soon" />
+                      <img src="./assets/4-modals/movie-app.PNG" alt="Cooming Soon" />
                 <aside class="content-info">
-                  <small><b>Fecha</b></small>
-                  <small>--/05/2022</small>
-                  <small><b>Tipo</b></small>
-                  <small>Buscador de peliculas y series</small>
+                  <small class="date-modal"><b class="date1-modal2">Fecha</b></small>
+                  <small>xx/05/2022</small>
+                  <small><b class="type1-modal2">Tipo</b></small>
+                  <small class="res-type1-modal2">Buscador de peliculas y series</small>
                   <small><b>Repo</b></small>
                   <small>
                     <a href="https://google.com" target="_blank" rel="noopener">
@@ -743,12 +726,12 @@ online gratiuto en espaniol donde aprendi y mejore mis conocimientos en JS.</p>
                       
                 </aside>
                 <aside class="content-description">
-                  <small><b>Descripcion</b></small>
-                  <p></p>
+                  <small><b class="desc1-modal2">Descripcion</b></small>
+                  <p class="res-desc1-modal2"> 
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
                     dicta quod in voluptates libero, ea obcaecati labore cum
                     ducimus! Sint facilis asperiores quibusdam ipsa molestias
-                    distinctio iusto doloribus aliquam rerum.</p>
+                    distinctio iusto doloribus aliquam rerum. 
                   </p>
                 </aside>
               </div>
@@ -757,14 +740,14 @@ online gratiuto en espaniol donde aprendi y mejore mis conocimientos en JS.</p>
 
            <article class="accordion">
             <div class="content-details">
-              <span class="content-summary"><b>Cooming Soon</b></span>
+              <span class="content-summary"><b class="second-title-react">Cooming Soon</b></span>
               <div class="content" data-dark>
                 <img src="./assets/4-modals/" alt="Cooming Soon" />
                 <aside class="content-info">
-                  <small><b>Fecha</b></small>
-                  <small>--/--/2022</small>
-                  <small><b>Tipo</b></small>
-                  <small>-</small>
+                  <small class="date-modal"><b class="date2-modal2" >Fecha</b></small>
+                  <small>--/09/2022</small>
+                  <small><b class="type2-modal2">Tipo</b></small>
+                  <small class="res-type2-modal2">-</small>
                   <small><b>Repo</b></small>
                   <small>
                     <a href="https://google.com" target="_blank" rel="noopener">
@@ -776,12 +759,12 @@ online gratiuto en espaniol donde aprendi y mejore mis conocimientos en JS.</p>
                       
                 </aside>
                 <aside class="content-description">
-                  <small><b>Descripcion</b></small>
-                  <p></p>
+                  <small><b class="desc2-modal2">Descripcion</b></small>
+                  <p class="res-desc2-modal2">   
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
                     dicta quod in voluptates libero, ea obcaecati labore cum
                     ducimus! Sint facilis asperiores quibusdam ipsa molestias
-                    distinctio iusto doloribus aliquam rerum.</p>
+                    distinctio iusto doloribus aliquam rerum. 
                   </p>
                 </aside>
               </div>
@@ -790,14 +773,14 @@ online gratiuto en espaniol donde aprendi y mejore mis conocimientos en JS.</p>
 
            <article class="accordion">
             <div class="content-details">
-              <span class="content-summary"><b>Cooming Soon</b></span>
+              <span class="content-summary third-title-react"><b>Cooming Soon</b></span>
               <div class="content" data-dark>
                 <img src="./assets/4-modals/" alt="Cooming" />
                 <aside class="content-info">
-                  <small><b>Fecha</b></small>
-                  <small>--/--/2022</small>
-                  <small><b>Tipo</b></small>
-                  <small>-</small>
+                  <small class="date-modal"><b class="date3-modal2">Fecha</b></small>
+                  <small>--/09/2022</small>
+                  <small><b class="type3-modal2">Tipo</b></small>
+                  <small class="res-type3-modal2">-</small>
                   <small><b>Repo</b></small>
                   <small>
                     <a href="https://google.com" target="_blank" rel="noopener">
@@ -809,12 +792,12 @@ online gratiuto en espaniol donde aprendi y mejore mis conocimientos en JS.</p>
                       
                 </aside>
                 <aside class="content-description">
-                  <small><b>Descripcion</b></small>
-                  <p></p>
+                  <small><b class="desc3-modal2">Descripcion</b></small>
+                  <p class="res-desc3-modal2"> 
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
                     dicta quod in voluptates libero, ea obcaecati labore cum
                     ducimus! Sint facilis asperiores quibusdam ipsa molestias
-                    distinctio iusto doloribus aliquam rerum.</p>
+                    distinctio iusto doloribus aliquam rerum. 
                   </p>
                 </aside>
               </div>
@@ -826,7 +809,7 @@ online gratiuto en espaniol donde aprendi y mejore mis conocimientos en JS.</p>
 
     <section id="contacto" class="contact " data-dark>
         <div class="container">
-      <h2 class="section-title margin-top-5" data-dark>Mis Redes Sociales</h2>
+      <h2 class="section-title margin-top-5 social-lang" data-dark>Mis Redes Sociales</h2>
       <article class="contact-cards">
           <aside class="cards box-shadow-1">    
               <article class="social-media">
@@ -851,22 +834,24 @@ online gratiuto en espaniol donde aprendi y mejore mis conocimientos en JS.</p>
           </aside>
       <img src="./assets/5-contacts/mano_da_sx.png" class="img-hand transform_right transform_top_m" alt="">
       </article>
-<h3 class="section-title">Contacto Directo</h3>
+<h3 class="section-title contact-lang">Contacto Directo</h3>
       <form class="contact-form box-shadow-1">
-        <input type="text" name="name" placeholder="Ingresa tu nombre *" title="Nombre solo acepta letras y espacios en blanco" pattern="^[A-Za-zàèìòù\s]+$" data-dark required>
-        <input type="text" name="email" placeholder="Ingresa tu correo *" title="Email incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" data-dark="" required>
-        <textarea name="comments" cols="30" rows="10" placeholder="Dejame tus comentarios *" data-dark></textarea>  
+        <input type="text" name="name" placeholder="Name *" title="Your Name" pattern="^[A-Za-zàèìòù\s]+$" data-dark required>
+        <input type="text" name="email" placeholder="Email *" title="Email X. 'example: yourmail@gmail.com'" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" data-dark="" required>
+        <textarea name="comments" cols="30" rows="10" placeholder="Comments *" data-dark></textarea>  
         <div class="contact-form-loader text-center none">
           <img src="./assets/5-contacts/loader.svg" alt="Enviando...">
         </div>
-        <input class="btn" type="submit" value="ENVIAR MENSAJE">  
+        <input class="btn" type="submit" value="SEND">  
       </form>
       <article id="gracias" class="modal" data-dark>
         <div class="modal-content-form">
           <article class="contact-form-response">
-            <h3>
+            <h3 class="thanks-lang">
               Muchas Gracias!
+            </h3>
               <br>
+              <h3 class="thanks2-lang">
               Por tus comentarios
             </h3>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12,18c4,0,5-4,5-4H7C7,14,8,18,12,18z"/><path d="M12,2C6.486,2,2,6.486,2,12c0,5.514,4.486,10,10,10s10-4.486,10-10C22,6.486,17.514,2,12,2z M12,20c-4.411,0-8-3.589-8-8 s3.589-8,8-8s8,3.589,8,8S16.411,20,12,20z"/><path d="M13 12l2 .012C15.012 11.55 15.194 11 16 11s.988.55 1 1h2c0-1.206-.799-3-3-3S13 10.794 13 12zM8 11c.806 0 .988.55 1 1h2c0-1.206-.799-3-3-3s-3 1.794-3 3l2 .012C7.012 11.55 7.194 11 8 11z"/></svg>
@@ -879,11 +864,13 @@ online gratiuto en espaniol donde aprendi y mejore mis conocimientos en JS.</p>
 
     <section id="footer" class="footer" data-dark>
       <small
-        >Sitio desarrollado por <a href="#inicio"> Francesco Farfan </a> - 2022
-      </small>
+        class="footer-lang">2022 - Sitio desarrollado por
+      </small><a href="#inicio"> Francesco Farfan</a>
     </section>
+
 
     <script src="./js/index.js" type="module"></script>
     <script src="./js/drop-down.js"></script> 
+    <script src="./js/languages.js"></script> 
   </body>
 </html>
