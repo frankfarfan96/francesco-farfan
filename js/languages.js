@@ -60,7 +60,6 @@ const $languages = document.querySelector(".languages"),
   footerLang = document.querySelector(".footer-lang");
 
 $links.forEach((el) => {
-  // al ultimo poner que tambien quite el activo de el dropdown
   el.addEventListener("click", () => {
     $languages.querySelector(".active").classList.remove("active");
     el.classList.add("active");
@@ -166,14 +165,14 @@ let data = {
     resType3ModalLang: "My Digital Portfolio",
     desc3ModalLang: "Description",
     resDesc3ModalLang:
-      "This has been my last project done with JS, where I focused on making a responsive and stylish layout in my own way. Try not to use JS in cases where you could do it with CSS, like in the Slides part. I also made it multilingual and with dark and light themes.",
-    firtsTitleReactLang: "Movie and series search engine with React",
+      "This has been my last project done with JS, where I focused on making a responsive and stylish layout in my own way. In the HTML I have implemented meta tags for SEO and Socialmedia. Try not to use JS in cases where you could do it with CSS, like in the Slides part. I also made it multilingual and with dark and light themes.",
+    firtsTitleReactLang: "Movie and series search engine with React and Redux",
     date1Modal2Lang: "Date",
     type1Modal2Lang: "Type",
     resType1Modal2Lang: "Movie and series search engine",
     desc1Modal2Lang: "Description",
     resDesc1Modal2Lang:
-      "In this project apart from Redux I also used Router-React to make it SPA type. It is a site that shows the series and movies consumed from an api. It has a search engine for the movies and series interested, which are then rendered in 2 slides. It is simple layout and it is also responsive.",
+      "In this project apart from Redux I also used Router-React to make it SPA type. It is a site that shows the series and movies consumed from an api. It has a search engine for the movies and series interested, which are then rendered in 2 slides and when selecting a movie or series, its details are rendered in another route. It is simple layout and it is also responsive.",
     secondTitleReactLang: "Cooming Soon",
     date2Modal2Lang: "Date",
     type2Modal2Lang: "Type",
@@ -233,7 +232,7 @@ let data = {
     resType3ModalLang: "Il mio Portfoglio Digitale",
     desc3ModalLang: "Descrizione",
     resDesc3ModalLang:
-      "Questo è stato il mio ultimo progetto realizzato con JS, in cui mi sono concentrato sulla creazione di un layout reattivo ed elegante a modo mio. Ho cercato di non usare JS nei casi in cui potevo farli con CSS, come nella parte delle Slides dentro la sezione Proietti. L'ho anche reso multilingue e con temi chiari e scuri.",
+      "Questo è stato il mio ultimo progetto realizzato con JS, in cui mi sono concentrato sulla creazione di un layout responsive ed elegante a modo mio. Nell'HTML ho implementato i meta tag per SEO e Socialmedia. Ho cercato di non usare JS nei casi in cui potevo farli con CSS, come nella parte delle Slides dentro la sezione Proietti e quando si seleziona un film o una serie,  vengono visualizzati i suoi dettagli in un altra route. L'ho anche reso multilingue e con temi chiari e scuri.",
     firtsTitleReactLang: "Film e serie con React e Redux",
     date1Modal2Lang: "Data",
     type1Modal2Lang: "Tipo",
@@ -279,11 +278,11 @@ let data = {
     jsIntroLang:
       "Estos proyectos los desarrollé usando JavaScript y para la parte de maquetación web usé HTML y CSS. Todos los proyectos son responsive.",
     reactIntroLang:
-      "En algunos de estos proyectos realizados con React implemente también las librerias Redux y/o React-Router. Al momento sigo desarrollando mas proyectos que cargare mas adelante.",
+      "En algunos de estos proyectos realizados con React implemente también las librerias Redux y/o React-Router. Al momento sigo desarrollando mas proyectos que cargaré más adelante.",
     firtsTitleJsLang: "Ejercicios DOM",
     date1ModalLang: "Fecha",
     type1ModalLang: "Tipo",
-    resType1ModalLang: "Sitio para mis practicas con el DOM",
+    resType1ModalLang: "Sitio para mis prácticas con el DOM",
     desc1ModalLang: "Descripción",
     resDesc1ModalLang:
       "En este sitio me ejercité en el dominio del DOM gracias JS y sus eventos, hize 15 secciones donde he implementado un ejercicio diverso por cada una (por ejemplo, un reloj digital, eventos del teclado, detección de la camara web, sorteo digital, filtros de busqueda, etc). Implementé también un menú hamburguesa y más ejercicios del manejo del DOM.",
@@ -300,14 +299,14 @@ let data = {
     resType3ModalLang: "Mi Portfolio Digital",
     desc3ModalLang: "Descripción",
     resDesc3ModalLang:
-      "Este ha sido mi ultimo proyecto realizado con JS, donde me focalize en hacer una maquetacion responsiva y etilizada a mi modo. Trate de no usar JS en los casos donde podia hacerlos con CSS, como en la parte de las Slides. Lo hize tambien multilingue y con los temas oscuro y claro.",
+      "Este ha sido mi ultimo proyecto realizado con JS, donde me focalize en hacer una maquetacion responsiva y etilizada a mi modo. En el HTML implementé metatags para SEO y Socialmedia. Trate de no usar JS en los casos donde podia hacerlos con CSS, como en la parte de las Slides. Lo hize tambien multilingue y con los temas oscuro y claro.",
     firtsTitleReactLang: "Películas y series con React y Redux",
     date1Modal2Lang: "Fecha",
     type1Modal2Lang: "Tipo",
     resType1Modal2Lang: "Buscador de películas y series",
     desc1Modal2Lang: "Descripción",
     resDesc1Modal2Lang:
-      "En este proyecto a parte de Redux usé también Router-React para hacerla de tipo SPA. Es un sitio que mustra las series y películas consumidas de un api. Tiene un buscador para las películas y series interesadas, que se renderizan después en 2 slides. Es de maquetación simple y también es responsive.",
+      "En este proyecto a parte de Redux usé también Router-React para hacerla de tipo SPA. Es un sitio que mustra las series y películas consumidas de un api. Tiene un buscador para las películas y series interesadas, que se renderizan después en 2 slides y al seleccionar una película o serie, se renderizán sus detalles en otra ruta. Es de maquetación simple y también es responsive ",
     secondTitleReactLang: "Cooming Soon",
     date2Modal2Lang: "Fecha",
     type2Modal2Lang: "Tipo",

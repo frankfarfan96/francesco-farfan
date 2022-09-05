@@ -604,7 +604,7 @@ button.btn-set .hydrated {
 
 a.open-modal-container {
   position: relative;
-  bottom: -40%;
+  bottom: -29%;
   left: -30%;
 }
 
@@ -974,6 +974,9 @@ img.apere {
 @media screen and (min-width: 583px) {
   .contact-cards {
     margin-bottom: 9rem;
+  }
+  a.open-modal-container {
+    bottom: -40%;
   }
 }
 
