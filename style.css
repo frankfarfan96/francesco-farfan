@@ -938,7 +938,7 @@ img.apere {
 }
 
 .link-responsive {
-  width: 8rem;
+  width: 100%;
   overflow-x: hidden;
   text-overflow: ellipsis;
 }
