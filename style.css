@@ -937,6 +937,12 @@ img.apere {
   text-align: center;
 }
 
+.link-responsive {
+  width: 8rem;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
 .react-info {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -977,7 +983,7 @@ img.apere {
     margin-bottom: 9rem;
   }
   a.open-modal-container {
-    bottom: -40%;
+    bottom: -16%;
   }
 }
 
