@@ -17,12 +17,15 @@ const $languages = document.querySelector(".languages"),
   myProjectsLang = document.querySelector(".projects-lang"),
   jsIntroLang = document.querySelector(".js-info"),
   reactIntroLang = document.querySelector(".react-info"),
+  //---JS projects
+  //---
   firtsTitleJsLang = document.querySelector(".first-title-js"),
   date1ModalLang = document.querySelector(".date1-modal"),
   type1ModalLang = document.querySelector(".type1-modal"),
   resType1ModalLang = document.querySelector(".res-type1-modal"),
   desc1ModalLang = document.querySelector(".desc1-modal"),
   resDesc1ModalLang = document.querySelector(".res-desc1-modal"),
+  //---
   secondTitleJsLang = document.querySelector(".second-title-js"),
   date2ModalLang = document.querySelector(".date2-modal"),
   type2ModalLang = document.querySelector(".type2-modal"),
@@ -35,12 +38,21 @@ const $languages = document.querySelector(".languages"),
   resType3ModalLang = document.querySelector(".res-type3-modal"),
   desc3ModalLang = document.querySelector(".desc3-modal"),
   resDesc3ModalLang = document.querySelector(".res-desc3-modal"),
+  fourthTitleJsLang = document.querySelector(".fourth-title-js"),
+  date4ModalLang = document.querySelector(".date4-modal"),
+  type4ModalLang = document.querySelector(".type4-modal"),
+  resType4ModalLang = document.querySelector(".res-type4-modal"),
+  desc4ModalLang = document.querySelector(".desc4-modal"),
+  resDesc4ModalLang = document.querySelector(".res-desc4-modal"),
+  //--React projects
+  //---
   firtsTitleReactLang = document.querySelector(".first-title-react"),
   date1Modal2Lang = document.querySelector(".date1-modal2"),
   type1Modal2Lang = document.querySelector(".type1-modal2"),
   resType1Modal2Lang = document.querySelector(".res-type1-modal2"),
   desc1Modal2Lang = document.querySelector(".desc1-modal2"),
   resDesc1Modal2Lang = document.querySelector(".res-desc1-modal2"),
+  //---
   secondTitleReactLang = document.querySelector(".second-title-react"),
   date2Modal2Lang = document.querySelector(".date2-modal2"),
   type2Modal2Lang = document.querySelector(".type2-modal2"),
@@ -53,6 +65,13 @@ const $languages = document.querySelector(".languages"),
   resType3Modal2Lang = document.querySelector(".res-type3-modal2"),
   desc3Modal2Lang = document.querySelector(".desc3-modal2"),
   resDesc3Modal2Lang = document.querySelector(".res-desc3-modal2"),
+  fourthTitleReactLang = document.querySelector(".fourth-title-react"),
+  date4Modal2Lang = document.querySelector(".date4-modal2"),
+  type4Modal2Lang = document.querySelector(".type4-modal2"),
+  resType4Modal2Lang = document.querySelector(".res-type4-modal2"),
+  desc4Modal2Lang = document.querySelector(".desc4-modal2"),
+  resDesc4Modal2Lang = document.querySelector(".res-desc4-modal2"),
+  // ***
   socialLang = document.querySelector(".social-lang"),
   contactLang = document.querySelector(".contact-lang"),
   thanksLang = document.querySelector(".thanks-lang"),
@@ -80,12 +99,16 @@ $links.forEach((el) => {
     myProjectsLang.textContent = data[attr].myProjectsLang;
     jsIntroLang.textContent = data[attr].jsIntroLang;
     reactIntroLang.textContent = data[attr].reactIntroLang;
+    //---JS projects
+    //---
     firtsTitleJsLang.textContent = data[attr].firtsTitleJsLang;
     date1ModalLang.textContent = data[attr].date1ModalLang;
     type1ModalLang.textContent = data[attr].type1ModalLang;
     resType1ModalLang.textContent = data[attr].resType1ModalLang;
     desc1ModalLang.textContent = data[attr].desc1ModalLang;
     resDesc1ModalLang.textContent = data[attr].resDesc1ModalLang;
+    //---
+
     secondTitleJsLang.textContent = data[attr].secondTitleJsLang;
     date2ModalLang.textContent = data[attr].date2ModalLang;
     type2ModalLang.textContent = data[attr].type2ModalLang;
@@ -98,12 +121,16 @@ $links.forEach((el) => {
     resType3ModalLang.textContent = data[attr].resType3ModalLang;
     desc3ModalLang.textContent = data[attr].desc3ModalLang;
     resDesc3ModalLang.textContent = data[attr].resDesc3ModalLang;
+
+    //--React projects
+    //---
     firtsTitleReactLang.textContent = data[attr].firtsTitleReactLang;
     date1Modal2Lang.textContent = data[attr].date1Modal2Lang;
     type1Modal2Lang.textContent = data[attr].type1Modal2Lang;
     resType1Modal2Lang.textContent = data[attr].resType1Modal2Lang;
     desc1Modal2Lang.textContent = data[attr].desc1Modal2Lang;
     resDesc1Modal2Lang.textContent = data[attr].resDesc1Modal2Lang;
+    //---
     secondTitleReactLang.textContent = data[attr].secondTitleReactLang;
     date2Modal2Lang.textContent = data[attr].date2Modal2Lang;
     type2Modal2Lang.textContent = data[attr].type2Modal2Lang;
@@ -116,6 +143,14 @@ $links.forEach((el) => {
     resType3Modal2Lang.textContent = data[attr].resType3Modal2Lang;
     desc3Modal2Lang.textContent = data[attr].desc3Modal2Lang;
     resDesc3Modal2Lang.textContent = data[attr].resDesc3Modal2Lang;
+    fourthTitleReactLang.textContent = data[attr].fourthTitleReactLang;
+    date4Modal2Lang.textContent = data[attr].date4Modal2Lang;
+    type4Modal2Lang.textContent = data[attr].type4Modal2Lang;
+    resType4Modal2Lang.textContent = data[attr].resType4Modal2Lang;
+    desc4Modal2Lang.textContent = data[attr].desc4Modal2Lang;
+    resDesc4Modal2Lang.textContent = data[attr].resDesc4Modal2Lang;
+    //****
+
     socialLang.textContent = data[attr].socialLang;
     contactLang.textContent = data[attr].contactLang;
     thanksLang.textContent = data[attr].thanksLang;
@@ -144,6 +179,8 @@ let data = {
       "I developed these projects using JavaScript and for the web layout part I used HTML and CSS. All projects are responsive.",
     reactIntroLang:
       "In some of these projects made with React, I also implemented the Redux and/or React-Router libraries. At the moment I continue developing more projects that I will upload later.",
+    //---JS projects
+    //---
     firtsTitleJsLang: "DOM Exercises",
     date1ModalLang: "Date",
     type1ModalLang: "Type",
@@ -152,6 +189,8 @@ let data = {
     resDesc1ModalLang:
       "In this site I exercised in the domain of the DOM thanks to JS and its events, I made 15 sections where I implemented a different exercise for each one (for example, a digital clock, keyboard events, detection of the webcam, digital sweepstakes, search filters, etc). Also implement a menu-hamburger and more DOM management exercises.",
     date2ModalLang: "Date",
+    //---
+
     secondTitleJsLang: "SPA with WordPress as Backend",
     date2ModalLang: "Date",
     type2ModalLang: "Type",
@@ -166,6 +205,9 @@ let data = {
     desc3ModalLang: "Description",
     resDesc3ModalLang:
       "This has been my last project done with JS, where I focused on making a responsive and stylish layout in my own way. In the HTML I have implemented meta tags for SEO and Socialmedia. Try not to use JS in cases where you could do it with CSS, like in the Slides part. I also made it multilingual and with dark and light themes.",
+
+    //---React
+    //---
     firtsTitleReactLang: "Movie and series search engine with React and Redux",
     date1Modal2Lang: "Date",
     type1Modal2Lang: "Type",
@@ -173,20 +215,23 @@ let data = {
     desc1Modal2Lang: "Description",
     resDesc1Modal2Lang:
       "In this project apart from Redux I also used Router-React to make it SPA type. It is a site that shows the series and movies consumed from an api. It has a search engine for the movies and series interested, which are then rendered in 2 slides and when selecting a movie or series, its details are rendered in another route. It is simple layout and it is also responsive.",
-    secondTitleReactLang: "Cooming Soon",
+    //---
+    secondTitleReactLang: "Buuking",
     date2Modal2Lang: "Date",
     type2Modal2Lang: "Type",
-    resType2Modal2Lang: "-",
+    resType2Modal2Lang: "Buuking, a replica of Booking",
     desc2Modal2Lang: "Description",
     resDesc2Modal2Lang:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dicta quod in voluptates libero, ea obcaecati labore cum ducimus! Sint facilis asperiores quibusdam ipsa molestias distinctio iusto doloribus aliquam rerum.",
-    thirdTitleReactLang: "Cooming Soon",
+      "In this project I made a replica of the Booking site, copying some parts of its interfaces and implementing some of its functions. The 3 interfaces that I made were the homepage, the Search results after selecting the search button and the page after having selected one of the 'searched' hotels. It is a static site and it is not responsive, is a simple project in order to continue practicing handling React, Redux, React-Router-Dom and Calendar another library. Once you have entered the data (place, date and people) on the homepage and have selected the 'Search' button you go to another interface (the 'results' of the search) with the entered data rendered. In it if you select the 'View Details' button you go to the third and last interface (details of the selected place). In this last interface I have implemented a Slide inside a Modal after selecting one of the photos, all without external libraries. ",
+    thirdTitleReactLang: "Administration app with React",
     date3Modal2Lang: "Date",
     type3Modal2Lang: "Type",
-    resType3Modal2Lang: "-",
+    resType3Modal2Lang: "Users Administration Panel",
     desc3Modal2Lang: "Description",
     resDesc3Modal2Lang:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dicta quod in voluptates libero, ea obcaecati labore cum ducimus! Sint facilis asperiores quibusdam ipsa molestias distinctio iusto doloribus aliquam rerum.",
+      "In this project I created a Dashboard, I only made 4 interfaces and implemented some features. There are two components that are always present, the SideBar and the Navigation Bar. The first interface is Homepage, where several cards are rendered with the content of the sales revenue data, balances, orders, users, then a cartesian graph that shows the monthly income (implemented with an external library,) and at the end a table where the last transactions are listed (I also implemented it with mui). From the sidebar, there are two links (Users and Products) that will take you to the second interface, where the Users are PivotTabled (using another library). The listed users can be deleted or also by selecting the 'View' button you can go to another interface where the user's purchase history and personal data are displayed. Returning to the user list interface, selecting the 'Add New' button, the last interface I implemented is rendered, where there is a form to fill out, where the function to upload the photo from local memory is active. I finished the project implementing the Dark Mode thanks to the api createContext from React.",
+
+    //---
     socialLang: "My Social",
     contactLang: "Direct Contact",
     thanksLang: "Thank You So Much",
@@ -212,6 +257,8 @@ let data = {
       "Ho sviluppato questi progetti utilizzando JavaScript e per la parte del layout web ho utilizzato HTML e CSS. Tutti i progetti sono responsive.",
     reactIntroLang:
       "In alcuni di questi progetti realizzati con React, ho implementato anche le librerie Redux e/o React-Router. Al momento continuo a sviluppare altri progetti che caricherò in seguito.",
+    //---JS projects
+    //---
     firtsTitleJsLang: "Esercizi DOM",
     date1ModalLang: "Data",
     type1ModalLang: "Tipo",
@@ -219,6 +266,8 @@ let data = {
     desc1ModalLang: "Descrizione",
     resDesc1ModalLang:
       "In questo sito mi sono esercitato nel dominio del DOM grazie a JS e ai suoi eventi, ho realizzato 15 sezioni dove ho implementato un esercizio diverso per ciascuna (ad esempio un orologio digitale, eventi da tastiera, rilevamento della webcam, lotterie digitali, filtri di ricerca, ecc.). Implementare anche un menu-hamburger e più esercizi di manipolazione del DOM.",
+    //---
+
     secondTitleJsLang: "SPA con WordPress come Backend",
     date2ModalLang: "Data",
     type2ModalLang: "Tipo",
@@ -233,6 +282,9 @@ let data = {
     desc3ModalLang: "Descrizione",
     resDesc3ModalLang:
       "Questo è stato il mio ultimo progetto realizzato con JS, in cui mi sono concentrato sulla creazione di un layout responsive ed elegante a modo mio. Nell'HTML ho implementato i meta tag per SEO e Socialmedia. Ho cercato di non usare JS nei casi in cui potevo farli con CSS, come nella parte delle Slides dentro la sezione Proietti e quando si seleziona un film o una serie,  vengono visualizzati i suoi dettagli in un altra route. L'ho anche reso multilingue e con temi chiari e scuri.",
+
+    //---React
+    //---
     firtsTitleReactLang: "Film e serie con React e Redux",
     date1Modal2Lang: "Data",
     type1Modal2Lang: "Tipo",
@@ -240,20 +292,23 @@ let data = {
     desc1Modal2Lang: "Descrizione",
     resDesc1Modal2Lang:
       "In questo progetto oltre a Redux ho anche usato Router-React per renderlo di tipo SPA. È un sito che mostra le serie e i film consumati da un'API. Ha un motore di ricerca per i film e le serie interessati, che vengono poi renderizzati in 2 slides. Presenta un layout semplice e anche responsive.",
-    secondTitleReactLang: "Cooming Soon",
+    //---
+
+    secondTitleReactLang: "Buuking",
     date2Modal2Lang: "Data",
     type2Modal2Lang: "Tipo",
-    resType2Modal2Lang: "-",
+    resType2Modal2Lang: "Buuking, una replica di Booking",
     desc2Modal2Lang: "Descrizione",
     resDesc2Modal2Lang:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, amet accusantium! Debitis, adipisci asperiores mollitia beatae eum consequatur praesentium corrupti neque tempora assumenda atque distinctio autem quos dicta sed. Libero?",
-    thirdTitleReactLang: "Cooming Soon",
+      "In questo progetto ho realizzato una replica del sito di Booking, copiando alcune parti delle sue interfacce e implementandone alcune funzioni. Le 3 interfacce che ho realizzato sono state la home page, i risultati della ricerca dopo aver selezionato il pulsante 'search' e la pagina dopo aver selezionato uno degli hotel 'cercati'. È un sito statico e non è responsive, è un progetto semplice per continuare a esercitarmi con React, Redux, React-Router-Dom e Calendar un'altra libreria. Una volta inseriti nella homepage i dati (luogo, data e persone) e aver selezionato il pulsante 'Search' si va in un'altra interfaccia (i 'risultati' della ricerca) con i dati inseriti renderizzati. In essa se si seleziona il pulsante 'View Details' si va nella terza e ultima interfaccia (dettagli del luogo selezionato). In questa ultima interfaccia ho implementato una Slide dentro una Modal dopo selezionare una delle foto, il tutto senza librerie esterne.",
+
+    thirdTitleReactLang: "App di amministrazione con React",
     date3Modal2Lang: "Data",
     type3Modal2Lang: "Tipo",
-    resType3Modal2Lang: "-",
+    resType3Modal2Lang: "Pannello di amministrazione degli utenti",
     desc3Modal2Lang: "Descrizione",
     resDesc3Modal2Lang:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, amet accusantium! Debitis, adipisci asperiores mollitia beatae eum consequatur praesentium corrupti neque tempora assumenda atque distinctio autem quos dicta sed. Libero?",
+      "In questo progetto ho creato una Dashboard, ho realizzato solo 4 interfacce e implementato alcune funzionalità. Ci sono due componenti sempre presenti, la SideBar e la Navigation Bar. La prima interfaccia è Homepage, in cui vengono visualizzate diverse schede con il contenuto dei dati sui ricavi di vendita, saldi, ordini, utenze, poi un grafico cartesiano che mostra il reddito mensile (implementato con una libreria esterna) e alla fine una tabella dove sono elencate le ultime transazioni (l'ho implementato anche con mui). Dalla SideBar , ci sono due collegamenti (Utenti e Prodotti) che ti porteranno alla seconda interfaccia, dove gli Utenti vengono renderizzati in una tabella dinamica (usando un'altra libreria con mui). Gli utenti elencati possono essere cancellati o anche selezionando il pulsante 'View' è possibile passare a un'altra interfaccia in cui vengono visualizzati i suoi dettagli ovvero, la cronologia degli acquisti e i dati personali dell'utente. Alla fine, tornando all'interfaccia della lista utenti, selezionando il pulsante 'Add New', viene visualizzata l'ultima interfaccia che ho implementato, dove c'è un form da compilare, e dove la funzione per caricare una foto dalla memoria locale è attiva. Ho terminato il progetto implementando la Dark Mode grazie all'api createContext di React.",
     socialLang: "I miei Social",
     contactLang: "Contatto Diretto",
     thanksLang: "Grazie !",
@@ -279,6 +334,8 @@ let data = {
       "Estos proyectos los desarrollé usando JavaScript y para la parte de maquetación web usé HTML y CSS. Todos los proyectos son responsive.",
     reactIntroLang:
       "En algunos de estos proyectos realizados con React implemente también las librerias Redux y/o React-Router. Al momento sigo desarrollando mas proyectos que cargaré más adelante.",
+    //---JS projects
+    //---
     firtsTitleJsLang: "Ejercicios DOM",
     date1ModalLang: "Fecha",
     type1ModalLang: "Tipo",
@@ -286,6 +343,8 @@ let data = {
     desc1ModalLang: "Descripción",
     resDesc1ModalLang:
       "En este sitio me ejercité en el dominio del DOM gracias JS y sus eventos, hize 15 secciones donde he implementado un ejercicio diverso por cada una (por ejemplo, un reloj digital, eventos del teclado, detección de la camara web, sorteo digital, filtros de busqueda, etc). Implementé también un menú hamburguesa y más ejercicios del manejo del DOM.",
+    //---
+
     secondTitleJsLang: "SPA con WordPress como Backend",
     date2ModalLang: "Fecha",
     type2ModalLang: "Tipo",
@@ -293,6 +352,7 @@ let data = {
     desc2ModalLang: "Descripción",
     resDesc2ModalLang:
       "En este proyecto no me enfoqué tanto en la parte de la maquetación y estilos, es una pagina minimalista pero responsiva. Mi enfoque principal fue en el consumo de la información con Ajax para distribuirla en esta SPA. Los datos vienen consumidos desde cualquier blog hecho con wordpress (en mi caso use CCS-TRICKS). Los articulos principales estan en la home, la cual presenta el infinite scroll. La segunda es una sección de busqueda de viejos articulos y en la ultima implementé un formulario. También enlacé un link hacia un curso online gratiuto en español donde aprendí y mejore mis conocimientos en JS.",
+
     thirdTitleJsLang: "Mi Sitio Web",
     date3ModalLang: "Fecha",
     type3ModalLang: "Tipo",
@@ -300,6 +360,9 @@ let data = {
     desc3ModalLang: "Descripción",
     resDesc3ModalLang:
       "Este ha sido mi ultimo proyecto realizado con JS, donde me focalize en hacer una maquetacion responsiva y etilizada a mi modo. En el HTML implementé metatags para SEO y Socialmedia. Trate de no usar JS en los casos donde podia hacerlos con CSS, como en la parte de las Slides. Lo hize tambien multilingue y con los temas oscuro y claro.",
+
+    //---React
+    //---
     firtsTitleReactLang: "Películas y series con React y Redux",
     date1Modal2Lang: "Fecha",
     type1Modal2Lang: "Tipo",
@@ -307,20 +370,23 @@ let data = {
     desc1Modal2Lang: "Descripción",
     resDesc1Modal2Lang:
       "En este proyecto a parte de Redux usé también Router-React para hacerla de tipo SPA. Es un sitio que mustra las series y películas consumidas de un api. Tiene un buscador para las películas y series interesadas, que se renderizan después en 2 slides y al seleccionar una película o serie, se renderizán sus detalles en otra ruta. Es de maquetación simple y también es responsive ",
-    secondTitleReactLang: "Cooming Soon",
+    //---
+
+    secondTitleReactLang: "Buuking",
     date2Modal2Lang: "Fecha",
     type2Modal2Lang: "Tipo",
-    resType2Modal2Lang: "-",
+    resType2Modal2Lang: "Buuking, una réplica de Booking",
     desc2Modal2Lang: "Descripción",
     resDesc2Modal2Lang:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dicta quod in voluptates libero, ea obcaecati labore cum ducimus! Sint facilis asperiores quibusdam ipsa molestias distinctio iusto doloribus aliquam rerum.",
-    thirdTitleReactLang: "Cooming Soon",
+      "En este proyecto realicé una réplica del sitio de Booking, copiando algunas partes de su interfaces e implementando algunas de sus funciones. Las 3 interfaces que hice fueron las página de inicio, los resultados de la búsqueda después de seleccionar el botón de búsqueda y la página después de haber seleccionado uno de los hoteles 'buscados'. Es un sitio estático y no es responsive, es un proyecto simple para seguir practicando el manejo de React, Redux, React-Router-Dom y Calendar, otra libreria que también implementé. Una vez que haya ingresado los datos (lugar, fecha y personas) en la página de inicio y haya seleccionado el botón 'Search', pasará a otra interfaz (los 'resultados' de la búsqueda) con los datos ingresados. En él si seleccionas el botón 'View Details' vas a la tercera y última interfaz (detalles del lugar seleccionado). En esta última interfaz he implementado un Slide dentro de un Modal después de seleccionar una de las fotos, todo ello sin librerias externas.",
+
+    thirdTitleReactLang: "App de administración con React",
     date3Modal2Lang: "Fecha",
     type3Modal2Lang: "Tipo",
-    resType3Modal2Lang: "-",
+    resType3Modal2Lang: "Panel de Administración de usuarios",
     desc3Modal2Lang: "Descripción",
     resDesc3Modal2Lang:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dicta quod in voluptates libero, ea obcaecati labore cum ducimus! Sint facilis asperiores quibusdam ipsa molestias distinctio iusto doloribus aliquam rerum.",
+      " En este proyecto creé una Dashboard, solo hice 4 interfaces e implementé algunas funciones. Hay dos componentes que siempre estan presentes, la SideBar y la barra de navegación. La primera interfaz es la Homepage, donde se renderizan varias cards con el contenido de los datos de ingresos por ventas, saldos, pedidos, usuarios, después un gráfico cartesiano que muestra los ingresos mensuales (implementado con una biblioteca externa,) y al final una tabla donde se elencan las últimas transacciones (también lo implementé con mui). Desde la barra lateral, hay dos enlaces (Usuarios y Productos) que lo llevará a la segunda interfaz, donde se representa en una tabla dinámica los Usuarios  (usando otra biblioteca). Los usuarios elencados se pueden eliminar o también seleccionando el botón 'View' se puede ir a otra interfaz donde se muestran el historial de compras y los datos personales del usuario. Volviendo a la interfaz de la lista de usuarios, seleccionando el botón 'Add New', se renderiza la última interfaz que implementé, donde hay un formulario para llenar, donde la función para subir la foto desde la memoria local está activa. Finalizé el proyecto implementando el Dark Mode gracias a la api createContext desde React.",
     socialLang: "Mis Redes Sociales",
     contactLang: "Contacto Directo",
 
