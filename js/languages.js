@@ -230,6 +230,13 @@ let data = {
     desc3Modal2Lang: "Description",
     resDesc3Modal2Lang:
       "In this project I created a Dashboard, I only made 4 interfaces and implemented some features. There are two components that are always present, the SideBar and the Navigation Bar. The first interface is Homepage, where several cards are rendered with the content of the sales revenue data, balances, orders, users, then a cartesian graph that shows the monthly income (implemented with an external library,) and at the end a table where the last transactions are listed (I also implemented it with mui). From the sidebar, there are two links (Users and Products) that will take you to the second interface, where the Users are PivotTabled (using another library). The listed users can be deleted or also by selecting the 'View' button you can go to another interface where the user's purchase history and personal data are displayed. Returning to the user list interface, selecting the 'Add New' button, the last interface I implemented is rendered, where there is a form to fill out, where the function to upload the photo from local memory is active. I finished the project implementing the Dark Mode thanks to the api createContext from React.",
+    fourthTitleReactLang: "FFiteness Web",
+    date4Modal2Lang: "Date",
+    type4Modal2Lang: "Type",
+    resType4Modal2Lang: "A site to find fitness exercises (SPA)",
+    desc4Modal2Lang: "Description",
+    resDesc4Modal2Lang:
+      "In this project, I used React and react-rout to create a SPA exercise site. For the UI I used the Mui library (and just a CSS file for the initial setup) and to do the 2 fetch of the data that I implemented, I used RapidAPI. To pass the data between the 2 pages, I didn't use useContext because there were few components, so in this exercise I passed states through the props. The style of the site is simple but elegant, on the homepage there is a search engine that calls an exercise API (ExerciseDB) thanks to the RapidApi platform and under that search engine I implemented a Slide using the 'react-horizontal-' library. scrolling-menu'. On the second page, the selected exercise is displayed with more information about that exercise and also some related video tutorials (with another api also from RapidApi). And finally I reused 2 components (HorizontalScrollbar and ExerciseCard) that render 2 sections with similar exercises. ",
 
     //---
     socialLang: "My Social",
@@ -240,7 +247,7 @@ let data = {
   },
   italian: {
     mySkills: "Le mie Skills",
-    projects: "Proietti",
+    projects: "Progetti",
     myContact: "Contatto",
     hiWorld: "Ciao Mondo! Benvenuti al mio sito",
     myContactbtn1: "Contatto",
@@ -252,7 +259,7 @@ let data = {
     skillsLang: "Le mie Skills",
     myPresentationLang:
       "Nel 2020 ho iniziato un corso biennale come sviluppatore FullStack, dove ho conosciuto il mondo dello sviluppo web e varie tecnologie frontend e backend. Dopo un anno e mezzo ho deciso di iniziare il mio percorso da autodidatta e di concentrarmi sul lato Frontend, perfezionando quelle tecnologie web. Credo nel lavoro duro e continuo e il mio obiettivo è di diventare un Software Engineer. 🤓 ",
-    myProjectsLang: "I miei Proietti",
+    myProjectsLang: "I miei Progetti",
     jsIntroLang:
       "Ho sviluppato questi progetti utilizzando JavaScript e per la parte del layout web ho utilizzato HTML e CSS. Tutti i progetti sono responsive.",
     reactIntroLang:
@@ -281,7 +288,7 @@ let data = {
     resType3ModalLang: "Il mio Portfoglio Digitale",
     desc3ModalLang: "Descrizione",
     resDesc3ModalLang:
-      "Questo è stato il mio ultimo progetto realizzato con JS, in cui mi sono concentrato sulla creazione di un layout responsive ed elegante a modo mio. Nell'HTML ho implementato i meta tag per SEO e Socialmedia. Ho cercato di non usare JS nei casi in cui potevo farli con CSS, come nella parte delle Slides dentro la sezione Proietti e quando si seleziona un film o una serie,  vengono visualizzati i suoi dettagli in un altra route. L'ho anche reso multilingue e con temi chiari e scuri.",
+      "Questo è stato il mio ultimo progetto realizzato con JS, in cui mi sono concentrato sulla creazione di un layout responsive ed elegante a modo mio. Nell'HTML ho implementato i meta tag per SEO e Socialmedia. Ho cercato di non usare JS nei casi in cui potevo farli con CSS, come nella parte delle Slides dentro la sezione Progetti e quando si seleziona un film o una serie,  vengono visualizzati i suoi dettagli in un altra route. L'ho anche reso multilingue e con temi chiari e scuri.",
 
     //---React
     //---
@@ -309,6 +316,15 @@ let data = {
     desc3Modal2Lang: "Descrizione",
     resDesc3Modal2Lang:
       "In questo progetto ho creato una Dashboard, ho realizzato solo 4 interfacce e implementato alcune funzionalità. Ci sono due componenti sempre presenti, la SideBar e la Navigation Bar. La prima interfaccia è Homepage, in cui vengono visualizzate diverse schede con il contenuto dei dati sui ricavi di vendita, saldi, ordini, utenze, poi un grafico cartesiano che mostra il reddito mensile (implementato con una libreria esterna) e alla fine una tabella dove sono elencate le ultime transazioni (l'ho implementato anche con mui). Dalla SideBar , ci sono due collegamenti (Utenti e Prodotti) che ti porteranno alla seconda interfaccia, dove gli Utenti vengono renderizzati in una tabella dinamica (usando un'altra libreria con mui). Gli utenti elencati possono essere cancellati o anche selezionando il pulsante 'View' è possibile passare a un'altra interfaccia in cui vengono visualizzati i suoi dettagli ovvero, la cronologia degli acquisti e i dati personali dell'utente. Alla fine, tornando all'interfaccia della lista utenti, selezionando il pulsante 'Add New', viene visualizzata l'ultima interfaccia che ho implementato, dove c'è un form da compilare, e dove la funzione per caricare una foto dalla memoria locale è attiva. Ho terminato il progetto implementando la Dark Mode grazie all'api createContext di React.",
+
+    fourthTitleReactLang: "FFiteness Web",
+    date4Modal2Lang: "Data",
+    type4Modal2Lang: "Tipo",
+    resType4Modal2Lang: "Un sito per trovare esercizi di fitness (SPA)",
+    desc4Modal2Lang: "Descrizione",
+    resDesc4Modal2Lang:
+      "In questo progetto, ho usato React e react-rout per creare una SPA di un sito di esercizi. Per l'UI ho usato la libreria Mui (e solo un file CSS per il setup iniziale) e per fare le 2 fetch dei dati che ho usato, ho usato RapidAPI. Per il passaggio dei dati tra le 2 pagine, non ho usato useContext perché c'erano poche componenti, quindi in questo esercizio ho passato gli stati attraverso le props. Lo stile del sito è semplice ma elegante, nella pagina dell'Homepage c'è un motore di ricerca che effettua la call fetch ad un'api di esercizi(ExerciseDB) grazie alla piattaforma RapidApi e sotto quel motore di ricerca ho implementato una slide usando la libreria 'react-horizontal-scrolling-menu'. Nella seconda pagina, l'esercizio selezionato viene visualizzato e vengono visualizzate ulteriori informazioni riguardo l'esercizio e anche alcuni video tutorial correlati (con un'altra api sempre di RapidApi). E finalmente ho riutilizzato 2 componenti (HorizontalScrollbar e ExerciseCard) che renderizzano 2 sezioni con esercizi simili. ",
+
     socialLang: "I miei Social",
     contactLang: "Contatto Diretto",
     thanksLang: "Grazie !",
@@ -387,9 +403,17 @@ let data = {
     desc3Modal2Lang: "Descripción",
     resDesc3Modal2Lang:
       " En este proyecto creé una Dashboard, solo hice 4 interfaces e implementé algunas funciones. Hay dos componentes que siempre estan presentes, la SideBar y la barra de navegación. La primera interfaz es la Homepage, donde se renderizan varias cards con el contenido de los datos de ingresos por ventas, saldos, pedidos, usuarios, después un gráfico cartesiano que muestra los ingresos mensuales (implementado con una biblioteca externa,) y al final una tabla donde se elencan las últimas transacciones (también lo implementé con mui). Desde la barra lateral, hay dos enlaces (Usuarios y Productos) que lo llevará a la segunda interfaz, donde se representa en una tabla dinámica los Usuarios  (usando otra biblioteca). Los usuarios elencados se pueden eliminar o también seleccionando el botón 'View' se puede ir a otra interfaz donde se muestran el historial de compras y los datos personales del usuario. Volviendo a la interfaz de la lista de usuarios, seleccionando el botón 'Add New', se renderiza la última interfaz que implementé, donde hay un formulario para llenar, donde la función para subir la foto desde la memoria local está activa. Finalizé el proyecto implementando el Dark Mode gracias a la api createContext desde React.",
+
+    fourthTitleReactLang: "FFiteness Web",
+    date4Modal2Lang: "Fecha",
+    type4Modal2Lang: "Tipo",
+    resType4Modal2Lang: "Un sitio para buscar ejercicios fitness (SPA)",
+    desc4Modal2Lang: "Descripción",
+    resDesc4Modal2Lang:
+      "En este proyecto, utilicé React y react-rout para crear un sitio de ejercicios SPA. Para la UI usé la libreria Mui (y solo un archivo CSS para el setup inicial) y para hacer las 2 fetch de los datos que implementé, usé RapidAPI. Para pasar los datos entre las 2 páginas, no usé useContext porque habían pocas componentes, así que en este ejercicio pasé estados a través de las props. El estilo del sitio es simple pero elegante, en la homepage hay un buscador que hace la llamada hacia a una API de ejercicio (ExerciseDB) gracias a la plataforma RapidApi y bajo ese motor de búsqueda implementé una Slide usando la libreria 'react-horizontal-scrolling-menu'. En la segunda página, se muestra el ejercicio seleccionado con más información sobre tal ejercicio y también algunos videos tutoriales relacionados (con otra api también de RapidApi). Y finalmente reutilicé 2 componentes (HorizontalScrollbar y ExerciseCard) que renderizan 2 secciones con ejercicios similares. ",
+
     socialLang: "Mis Redes Sociales",
     contactLang: "Contacto Directo",
-
     thanksLang: "Muchas Gracias!",
     thanks2Lang: "Por tus comentarios",
     footerLang: "2022 - Sitio desarrollado por ",

@@ -99,6 +99,8 @@ img {
 
 p {
   line-height: 1.6;
+  overflow: auto;
+  max-height: 19vh;
 }
 
 /**************  Components  ************/
@@ -120,6 +122,7 @@ p {
   background: var(--first-color);
   color: var(--white-color);
   cursor: pointer;
+  border-radius: 9px;
 }
 
 .accordion .content-details .content-summary::before {
@@ -545,6 +548,7 @@ button.hamburger.is-active .hamburger-inner:before {
 .h3-summary {
   display: inline;
 }
+
 .gap-03 {
   gap: 0.3rem;
 }
@@ -559,6 +563,10 @@ button.hamburger.is-active .hamburger-inner:before {
 
 .margin-top-5 {
   margin-top: 5rem;
+}
+
+.max-height {
+  max-height: 100%;
 }
 
 .pad-left {
@@ -642,6 +650,19 @@ button.btn-react {
   top: -3rem;
 }
 
+.contact {
+  background-color: var(--white-color);
+  height: auto;
+  padding: 1rem 0;
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 100% 0%);
+  padding: 4.5rem 1rem 2rem 1rem;
+  margin-bottom: 6rem;
+}
+
 .content img {
   border: thin solid var(--first-color);
 }
@@ -650,6 +671,12 @@ button.btn-react {
   color: var(--first-color);
   display: inline-block;
   margin: 1.5rem auto 0.3rem;
+}
+
+.content-description {
+  overflow: hidden;
+  font-size: 0.95rem;
+  height: 25vh;
 }
 
 .content-info {
@@ -666,19 +693,6 @@ button.btn-react {
 
 .content-info small {
   text-align: center;
-}
-
-.contact {
-  background-color: var(--white-color);
-  height: auto;
-  padding: 1rem 0;
-}
-
-.contact-cards {
-  display: grid;
-  grid-template-columns: repeat(2, 100% 0%);
-  padding: 4.5rem 1rem 2rem 1rem;
-  margin-bottom: 6rem;
 }
 
 .dark-theme-btn {
