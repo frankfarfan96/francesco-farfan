@@ -4,7 +4,7 @@ const l = function (arg) {
 };
 const ls = localStorage;
 
-export default function darkTheme(btn, classDark, classWhite, classGray) {
+export default function darkTheme(btn, classDark) {
   const $themeBtn = d.querySelector(btn),
     $selectors = d.querySelectorAll("[data-dark]");
   // $selectorsW = d.querySelectorAll("[data-white]"),

@@ -121,6 +121,12 @@ $links.forEach((el) => {
     resType3ModalLang.textContent = data[attr].resType3ModalLang;
     desc3ModalLang.textContent = data[attr].desc3ModalLang;
     resDesc3ModalLang.textContent = data[attr].resDesc3ModalLang;
+    fourthTitleJsLang.textContent = data[attr].fourthTitleJsLang;
+    date4ModalLang.textContent = data[attr].date4ModalLang;
+    type4ModalLang.textContent = data[attr].type4ModalLang;
+    resType4ModalLang.textContent = data[attr].resType4ModalLang;
+    desc4ModalLang.textContent = data[attr].desc4ModalLang;
+    resDesc4ModalLang.textContent = data[attr].resDesc4ModalLang;
 
     //--React projects
     //---
@@ -188,7 +194,6 @@ let data = {
     desc1ModalLang: "Description",
     resDesc1ModalLang:
       "In this site I exercised in the domain of the DOM thanks to JS and its events, I made 15 sections where I implemented a different exercise for each one (for example, a digital clock, keyboard events, detection of the webcam, digital sweepstakes, search filters, etc). Also implement a menu-hamburger and more DOM management exercises.",
-    date2ModalLang: "Date",
     //---
 
     secondTitleJsLang: "SPA with WordPress as Backend",
@@ -205,6 +210,12 @@ let data = {
     desc3ModalLang: "Description",
     resDesc3ModalLang:
       "This has been my last project done with JS, where I focused on making a responsive and stylish layout in my own way. In the HTML I have implemented meta tags for SEO and Socialmedia. Try not to use JS in cases where you could do it with CSS, like in the Slides part. I also made it multilingual and with dark and light themes.",
+    fourthTitleJsLang: "Responsive Admin Dashboard (SPA static)",
+    date4ModalLang: "Date",
+    type4ModalLang: "Type",
+    resType4ModalLang: "SPA(static) of an administration site with Dashboard",
+    desc4ModalLang: "Description",
+    resDesc4ModalLang: "...",
 
     //---React
     //---
@@ -289,6 +300,14 @@ let data = {
     desc3ModalLang: "Descrizione",
     resDesc3ModalLang:
       "Questo è stato il mio ultimo progetto realizzato con JS, in cui mi sono concentrato sulla creazione di un layout responsive ed elegante a modo mio. Nell'HTML ho implementato i meta tag per SEO e Socialmedia. Ho cercato di non usare JS nei casi in cui potevo farli con CSS, come nella parte delle Slides dentro la sezione Progetti e quando si seleziona un film o una serie,  vengono visualizzati i suoi dettagli in un altra route. L'ho anche reso multilingue e con temi chiari e scuri.",
+
+    fourthTitleJsLang: "Dashboard di Amministrazione Responsive (SPA statica)",
+    date4ModalLang: "Data",
+    type4ModalLang: "Tipo",
+    resType4ModalLang:
+      "SPA(statica) di un sito di amministrazione con Dashboard",
+    desc4ModalLang: "Descrizione",
+    resDesc4ModalLang: "...",
 
     //---React
     //---
@@ -376,6 +395,15 @@ let data = {
     desc3ModalLang: "Descripción",
     resDesc3ModalLang:
       "Este ha sido mi ultimo proyecto realizado con JS, donde me focalize en hacer una maquetacion responsiva y etilizada a mi modo. En el HTML implementé metatags para SEO y Socialmedia. Trate de no usar JS en los casos donde podia hacerlos con CSS, como en la parte de las Slides. Lo hize tambien multilingue y con los temas oscuro y claro.",
+
+    fourthTitleJsLang: "Administrador Dashboard Responsive (SPA estatica)",
+    date1ModalLang: "Fecha",
+    type1ModalLang: "Tipo",
+    resType1ModalLang:
+      "SPA(estatica) de un sitio de administración con Dashboard",
+    desc1ModalLang: "Descripción",
+    resDesc1ModalLang:
+      "En este sitio me ejercité en el dominio del DOM gracias JS y sus eventos, hize 15 secciones donde he implementado un ejercicio diverso por cada una (por ejemplo, un reloj digital, eventos del teclado, detección de la camara web, sorteo digital, filtros de busqueda, etc). Implementé también un menú hamburguesa y más ejercicios del manejo del DOM.",
 
     //---React
     //---
