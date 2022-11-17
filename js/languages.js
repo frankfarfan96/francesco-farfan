@@ -44,6 +44,14 @@ const $languages = document.querySelector(".languages"),
   resType4ModalLang = document.querySelector(".res-type4-modal"),
   desc4ModalLang = document.querySelector(".desc4-modal"),
   resDesc4ModalLang = document.querySelector(".res-desc4-modal"),
+  //
+  fifthTitleJsLang = document.querySelector(".first-title-js"),
+  date5ModalLang = document.querySelector(".date5-modal"),
+  type5ModalLang = document.querySelector(".type5-modal"),
+  resType5ModalLang = document.querySelector(".res-type5-modal"),
+  desc5ModalLang = document.querySelector(".desc5-modal"),
+  resDesc5ModalLang = document.querySelector(".res-desc5-modal"),
+  //
   //--React projects
   //---
   firtsTitleReactLang = document.querySelector(".first-title-react"),
@@ -128,6 +136,13 @@ $links.forEach((el) => {
     desc4ModalLang.textContent = data[attr].desc4ModalLang;
     resDesc4ModalLang.textContent = data[attr].resDesc4ModalLang;
 
+    fifthTitleJsLang.textContent = data[attr].fifthTitleJsLang;
+    date5ModalLang.textContent = data[attr].date5ModalLang;
+    type5ModalLang.textContent = data[attr].type5ModalLang;
+    resType5ModalLang.textContent = data[attr].resType5ModalLang;
+    desc5ModalLang.textContent = data[attr].desc5ModalLang;
+    resDesc5ModalLang.textContent = data[attr].resDesc5ModalLang;
+
     //--React projects
     //---
     firtsTitleReactLang.textContent = data[attr].firtsTitleReactLang;
@@ -202,20 +217,29 @@ let data = {
     resType2ModalLang: "SPA (Single Page Application)",
     desc2ModalLang: "Description",
     resDesc2ModalLang:
-      "In this project I did not focus so much on the layout and styles part, it is a minimalist but responsive page. My main focus was on consuming the information with Ajax (with wordpress like backend) to distribute it in this SPA. The data is consumed from any blog made with wordpress (in my case I used CCS-TRICKS). The main articles are in the home page, which presents the infinite scroll. The second is a search section for old articles and in the last one I implemented a form. I also linked a link to a free online course in Spanish where I learned and improved my knowledge in JS.",
+      "This project is a minimalist but responsive page. I used Wordpress as a database, from where it receives the information with Ajax to distribute it in this SPA. The data is consumed from any blog made with wordpress (in my case I used CCS-TRICKS). The main articles are in the home page, which presents the infinite scroll. The second is a search section for old articles and in the last one I implemented a form. I also linked a link to a free online course in Spanish where I learned and improved my knowledge in JS.",
     thirdTitleJsLang: "My Web site",
     date3ModalLang: "Date",
     type3ModalLang: "Type",
     resType3ModalLang: "My Digital Portfolio",
     desc3ModalLang: "Description",
     resDesc3ModalLang:
-      "This has been my last project done with JS, where I focused on making a responsive and stylish layout in my own way. In the HTML I have implemented meta tags for SEO and Socialmedia. Try not to use JS in cases where you could do it with CSS, like in the Slides part. I also made it multilingual and with dark and light themes.",
+      "In this project I made a responsive and stylish layout in my own way. In the HTML I implemented meta tags for SEO and Socialmedia. Each section has a particular detail made with Javascript and/or css.",
     fourthTitleJsLang: "Responsive Admin Dashboard (SPA static)",
     date4ModalLang: "Date",
     type4ModalLang: "Type",
     resType4ModalLang: "SPA(static) of an administration site with Dashboard",
     desc4ModalLang: "Description",
-    resDesc4ModalLang: "...",
+    resDesc4ModalLang:
+      "In this project I made various interfaces of an Admin DashBoard site, using JavaScript routing to render the various routes. The main components are the menu that is on the left side, where all the paths of the site are linked, and the navbar that consists of the button to open and close the menu, a search bar and a photo of the user that should take you to the user's profile. The interfaces that I managed to make are the homepage (with some bugs with the css, because I used a single css file for the styles, a huge mistake), the Dashboard, the Costumers table and the messages (which was left halfway, for the difficulty I created in the Css). So I couldn't finish all the interfaces of the site, because it was also very difficult for me to do the layout correctly with Html through the routing with JavaScript. I realized that for projects like this it is convenient to use React or a framework that facilitates the routing and rendering of the components, since there are so many complex components.",
+
+    fifthTitleJsLang: "Drawing App",
+    date5ModalLang: "Date",
+    type5ModalLang: "Type",
+    resType5ModalLang: "Powerpoint",
+    desc5ModalLang: "Description",
+    resDesc5ModalLang:
+      "This project has a simple layout, in the center of the page there is a digital 'whiteboard', made with the Html canvas element. On the left side there is a small dashboard to manage the various actions when drawing. In it, implement the following functions: Straight line, rectangle, circle and triangle shape, with the possibility of drawing full figures or just the edges. You can also choose the color you want and clean the canvas or save it to a file and download it. It is not a responsive site because I focused on practicing with JavaScript.",
 
     //---React
     //---
@@ -292,14 +316,14 @@ let data = {
     resType2ModalLang: "SPA (Single Page Application)",
     desc2ModalLang: "Descrizione",
     resDesc2ModalLang:
-      "In questo progetto non mi sono concentrato tanto sulla parte del layout e degli stili, è una pagina minimalista ma responsive. Il mio obiettivo principale era quello di consumare le informazioni da un data base (wordpress come backend) con Ajax per distribuirle in questa SPA. I dati vengono consumati da qualsiasi blog realizzato con wordpress (nel mio caso ho usato CCS-TRICKS). Gli articoli principali sono nella home page, dove ho implementato lo scroll infinito. La seconda è una sezione di ricerca di vecchi articoli (anche essa con lo infinite scroll) e nell'ultima ho implementato un formulario. Ho anche collegato un link a un corso online gratuito in spagnolo dove ho imparato e migliorato le mie conoscenze in JS.",
+      "Questo progetto è una pagina minimalista ma reattiva. Ho usato Wordpress come database, da dove riceve le informazioni con Ajax per distribuirle in questa SPA. I dati vengono consumati da qualsiasi blog realizzato con wordpress (nel mio caso ho usato CCS-TRICKS). Gli articoli principali sono nella home page, dove ho implementato lo scroll infinito. La seconda è una sezione di ricerca di vecchi articoli (anche essa con lo infinite scroll) e nell'ultima ho implementato un formulario. Ho anche collegato un link a un corso online gratuito in spagnolo dove ho imparato e migliorato le mie conoscenze in JS.",
     thirdTitleJsLang: "Il mio sito web",
     date3ModalLang: "Data",
     type3ModalLang: "Tipo",
     resType3ModalLang: "Il mio Portfoglio Digitale",
     desc3ModalLang: "Descrizione",
     resDesc3ModalLang:
-      "Questo è stato il mio ultimo progetto realizzato con JS, in cui mi sono concentrato sulla creazione di un layout responsive ed elegante a modo mio. Nell'HTML ho implementato i meta tag per SEO e Socialmedia. Ho cercato di non usare JS nei casi in cui potevo farli con CSS, come nella parte delle Slides dentro la sezione Progetti e quando si seleziona un film o una serie,  vengono visualizzati i suoi dettagli in un altra route. L'ho anche reso multilingue e con temi chiari e scuri.",
+      "In questo progetto ho realizzato un layout reattivo ed elegante a modo mio. Nell'HTML ho implementato i meta tag per SEO e Socialmedia. Ogni sezione ha un dettaglio particolare realizzato con Javascript e/o css.",
 
     fourthTitleJsLang: "Dashboard di Amministrazione Responsive (SPA statica)",
     date4ModalLang: "Data",
@@ -307,7 +331,16 @@ let data = {
     resType4ModalLang:
       "SPA(statica) di un sito di amministrazione con Dashboard",
     desc4ModalLang: "Descrizione",
-    resDesc4ModalLang: "...",
+    resDesc4ModalLang:
+      "In questo progetto ho realizzato varie interfacce di un sito Admin DashBoard, utilizzando il routing JavaScript per renderizzare i vari path. I componenti principali sono il menu che si trova sul lato sinistro, dove sono collegati tutti i percorsi del sito, e la navbar dove si trovano un pulsante per aprire e chiudere il menu, una barra di ricerca e una foto dell'utente che dovrebbe portarti al profilo dell'utente. Le interfacce che sono riuscito a realizzare sono la homepage (con qualche bug nel css, perché ho usato un unico file css per tutti gli stili, un grosso errore), la Dashboard, la tabella dei Clienti e i messaggi (che è stato lasciato a metà, per la difficoltà che ho creato nel Css). Quindi non sono riuscito a terminare tutte le interfacce del sito, visto che è stato anche molto difficile per me lavorare con il Html attraverso il routing di JavaScript. Mi sono reso conto che per progetti come questo è conveniente utilizzare React o un framework che faciliti il ​​routing e il rendering delle diverse componenti, dato che molto componenti sono complesse.",
+
+    fifthTitleJsLang: "Drawing App",
+    date5ModalLang: "Data",
+    type5ModalLang: "Tipo",
+    resType5ModalLang: "Powerpoint",
+    desc5ModalLang: "Descrizione",
+    resDesc5ModalLang:
+      "Questo progetto ha un layout semplice, al centro della pagina c'è una 'lavagna' digitale, realizzata con l'elemento canvas di Html. Sul lato sinistro è presente una piccola dashboard per gestire le varie azioni durante l'ora di disegno. Vi ho implementato le seguenti funzioni: linea retta, rettangolo, cerchio e forma triangolare, con la possibilità di disegnare figure riempite o solo i bordi. Puoi anche scegliere il colore che desideri e pulire il Canvas o salvarlo in un file e scaricarlo. Non è un sito reattivo perché mi sono concentrato sulla pratica con JavaScript.",
 
     //---React
     //---
@@ -386,7 +419,7 @@ let data = {
     resType2ModalLang: "SPA (Single Page Application)",
     desc2ModalLang: "Descripción",
     resDesc2ModalLang:
-      "En este proyecto no me enfoqué tanto en la parte de la maquetación y estilos, es una pagina minimalista pero responsiva. Mi enfoque principal fue en el consumo de la información con Ajax para distribuirla en esta SPA. Los datos vienen consumidos desde cualquier blog hecho con wordpress (en mi caso use CCS-TRICKS). Los articulos principales estan en la home, la cual presenta el infinite scroll. La segunda es una sección de busqueda de viejos articulos y en la ultima implementé un formulario. También enlacé un link hacia un curso online gratiuto en español donde aprendí y mejore mis conocimientos en JS.",
+      "Este proyecto es una página minimalista pero responsiva. Usé como database Wordpress, desde donde recibe la información con Ajax para distribuirla en esta SPA. Los datos vienen consumidos desde cualquier blog hecho con wordpress (en mi caso use CCS-TRICKS). Los articulos principales estan en la home, la cual presenta el infinite scroll. La segunda es una sección de busqueda de viejos articulos y en la ultima implementé un formulario. También enlacé un link hacia un curso online gratiuto en español donde aprendí y mejore mis conocimientos en JS.",
 
     thirdTitleJsLang: "Mi Sitio Web",
     date3ModalLang: "Fecha",
@@ -394,7 +427,7 @@ let data = {
     resType3ModalLang: "Mi Portfolio Digital",
     desc3ModalLang: "Descripción",
     resDesc3ModalLang:
-      "Este ha sido mi ultimo proyecto realizado con JS, donde me focalize en hacer una maquetacion responsiva y etilizada a mi modo. En el HTML implementé metatags para SEO y Socialmedia. Trate de no usar JS en los casos donde podia hacerlos con CSS, como en la parte de las Slides. Lo hize tambien multilingue y con los temas oscuro y claro.",
+      "En este proyecto hize una maquetación responsiva y etilizada a mi modo. En el HTML implementé metatags para SEO y Socialmedia. Cada sección tiene un detalle particular hecha con Javascript y/o css.",
 
     fourthTitleJsLang: "Administrador Dashboard Responsive (SPA estatica)",
     date1ModalLang: "Fecha",
@@ -403,7 +436,15 @@ let data = {
       "SPA(estatica) de un sitio de administración con Dashboard",
     desc1ModalLang: "Descripción",
     resDesc1ModalLang:
-      "En este sitio me ejercité en el dominio del DOM gracias JS y sus eventos, hize 15 secciones donde he implementado un ejercicio diverso por cada una (por ejemplo, un reloj digital, eventos del teclado, detección de la camara web, sorteo digital, filtros de busqueda, etc). Implementé también un menú hamburguesa y más ejercicios del manejo del DOM.",
+      "En este proyecto hize varias interfaces de un sitio Admin DashBoard, atravez del enrutamiento con JavaScript para renderizar las diversas rutas. Las componentes principales son el menú que se encuentra al lado izquierdo, donde están enlazadas todas las rutas del sitio, y la navbar que consta del botón para abrir y cerrar el menú, una barra de búsqueda y una foto del usuario que te tendría que llevar al perfil del usuario. Las interfacez que logré realizar son la homepage(con algunos bugs con el css, debido a que usé un único file css para los estilos, grandisimo error), la Dashboard, la table de los Costumers y los mensajes (que quedó a medias, por la dificultad que creé en el Css). Entonces no logré terminar todas las interfaces del sitio, porque también me resultaba muy complicado hacer correctamente el maquetado con Html atravez del enrutamiento con JavaScript. Me di cuenta que para proyectos como este conviene usar React o un framework que facilite el enrutamiente y el renderizado de las componentes, visto que hay tantas componentes complejas.",
+
+    fifthTitleJsLang: "Drawing App",
+    date5ModalLang: "Fecha",
+    type5ModalLang: "Tipo",
+    resType5ModalLang: "Powerpoint",
+    desc5ModalLang: "Descripción",
+    resDesc5ModalLang:
+      "Este proyecto tiene un layout simple, al centro de la página hay una 'pizarra' digital, hecha con el elemento canvas de Html. En la parte de la izquierda presenta una pequeña dashboard para gestionar las diversas acciones a la hora de dibujar. En ella implemente las siguientes funciones: Linea recta, forma de rectángulo, círculo y triángulo, con la posibilidad de dibujar las figuras llenas o solo los bordes. También se puede escoger el color que se quiera y limpiar el canvas o poder salvarlo en un file y descargarlo. No es un sitio responsive pués me focalizé en practicar con JavaScript. ",
 
     //---React
     //---

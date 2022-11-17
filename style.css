@@ -406,7 +406,7 @@ button.hamburger.is-active .hamburger-inner:before {
 
   .menu {
     position: static;
-    padding-bottom: 0.7rem;
+    padding-bottom: 0.6rem;
     width: auto;
     flex-direction: row;
     opacity: 1;
