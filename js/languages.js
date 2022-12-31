@@ -44,13 +44,19 @@ const $languages = document.querySelector(".languages"),
   resType4ModalLang = document.querySelector(".res-type4-modal"),
   desc4ModalLang = document.querySelector(".desc4-modal"),
   resDesc4ModalLang = document.querySelector(".res-desc4-modal"),
-  //
   fifthTitleJsLang = document.querySelector(".first-title-js"),
   date5ModalLang = document.querySelector(".date5-modal"),
   type5ModalLang = document.querySelector(".type5-modal"),
   resType5ModalLang = document.querySelector(".res-type5-modal"),
   desc5ModalLang = document.querySelector(".desc5-modal"),
   resDesc5ModalLang = document.querySelector(".res-desc5-modal"),
+  //
+  sixthTitleJsLang = document.querySelector(".sixth-title-js"),
+  date6ModalLang = document.querySelector(".date6-modal"),
+  type6ModalLang = document.querySelector(".type6-modal"),
+  resType6ModalLang = document.querySelector(".res-type6-modal"),
+  desc6ModalLang = document.querySelector(".desc6-modal"),
+  resDesc6ModalLang = document.querySelector(".res-desc6-modal"),
   //
   //--React projects
   //---
@@ -142,6 +148,13 @@ $links.forEach((el) => {
     resType5ModalLang.textContent = data[attr].resType5ModalLang;
     desc5ModalLang.textContent = data[attr].desc5ModalLang;
     resDesc5ModalLang.textContent = data[attr].resDesc5ModalLang;
+
+    sixthTitleJsLang.textContent = data[attr].sixthTitleJsLang;
+    date6ModalLang.textContent = data[attr].date6ModalLang;
+    type6ModalLang.textContent = data[attr].type6ModalLang;
+    resType6ModalLang.textContent = data[attr].resType6ModalLang;
+    desc6ModalLang.textContent = data[attr].desc6ModalLang;
+    resDesc6ModalLang.textContent = data[attr].resDesc6ModalLang;
 
     //--React projects
     //---
@@ -240,6 +253,14 @@ let data = {
     desc5ModalLang: "Description",
     resDesc5ModalLang:
       "This project has a simple layout, in the center of the page there is a digital 'whiteboard', made with the Html canvas element. On the left side there is a small dashboard to manage the various actions when drawing. In it, implement the following functions: Straight line, rectangle, circle and triangle shape, with the possibility of drawing full figures or just the edges. You can also choose the color you want and clean the canvas or save it to a file and download it. It is not a responsive site because I focused on practicing with JavaScript.",
+
+    sixthTitleJsLang: "E-commerce Sneakers",
+    date6ModalLang: "Date",
+    type6ModalLang: "Type",
+    resType6ModalLang: "SPA Simple e-commerce",
+    desc6ModalLang: "Description",
+    resDesc6ModalLang:
+      "This project is a website for a small e-commerce of sneakers, it is a responsive site, with a navigation bar where you can select the products that are being changed through the main slider bar. It also has a shopping section, where you can choose the size, the color of the shoe and open a modal for inserting the data of the letter of credit. The slide and the checkout section were made thanks to JavaScript to make the components dynamic in the DOM.",
 
     //---React
     //---
@@ -342,6 +363,14 @@ let data = {
     resDesc5ModalLang:
       "Questo progetto ha un layout semplice, al centro della pagina c'è una 'lavagna' digitale, realizzata con l'elemento canvas di Html. Sul lato sinistro è presente una piccola dashboard per gestire le varie azioni durante l'ora di disegno. Vi ho implementato le seguenti funzioni: linea retta, rettangolo, cerchio e forma triangolare, con la possibilità di disegnare figure riempite o solo i bordi. Puoi anche scegliere il colore che desideri e pulire il Canvas o salvarlo in un file e scaricarlo. Non è un sito reattivo perché mi sono concentrato sulla pratica con JavaScript.",
 
+    sixthTitleJsLang: "E-commerce Sneakers",
+    date6ModalLang: "Data",
+    type6ModalLang: "Tipo",
+    resType6ModalLang: "SPA E-commerce semplice",
+    desc6ModalLang: "Descrizione",
+    resDesc6ModalLang:
+      "Questo progetto è un sito web per un piccolo e-commerce di sneakers, è un sito responsive, con barra di navigazione dove è possibile selezionare i prodotti che vengono modificati tramite la barra di scorrimento principale. Ha anche una sezione shopping, dove puoi scegliere la taglia, il colore della scarpa e aprire un modale per l'inserimento dei dati della lettera di credito. La slide e la sezione checkout sono state realizzate grazie a JavaScript per rendere dinamici i componenti nel DOM.",
+
     //---React
     //---
     firtsTitleReactLang: "Film e serie con React e Redux",
@@ -430,12 +459,12 @@ let data = {
       "En este proyecto hize una maquetación responsiva y etilizada a mi modo. En el HTML implementé metatags para SEO y Socialmedia. Cada sección tiene un detalle particular hecha con Javascript y/o css.",
 
     fourthTitleJsLang: "Administrador Dashboard Responsive (SPA estatica)",
-    date1ModalLang: "Fecha",
-    type1ModalLang: "Tipo",
-    resType1ModalLang:
+    date4ModalLang: "Fecha",
+    type4ModalLang: "Tipo",
+    resType4ModalLang:
       "SPA(estatica) de un sitio de administración con Dashboard",
-    desc1ModalLang: "Descripción",
-    resDesc1ModalLang:
+    desc4ModalLang: "Descripción",
+    resDesc4ModalLang:
       "En este proyecto hize varias interfaces de un sitio Admin DashBoard, atravez del enrutamiento con JavaScript para renderizar las diversas rutas. Las componentes principales son el menú que se encuentra al lado izquierdo, donde están enlazadas todas las rutas del sitio, y la navbar que consta del botón para abrir y cerrar el menú, una barra de búsqueda y una foto del usuario que te tendría que llevar al perfil del usuario. Las interfacez que logré realizar son la homepage(con algunos bugs con el css, debido a que usé un único file css para los estilos, grandisimo error), la Dashboard, la table de los Costumers y los mensajes (que quedó a medias, por la dificultad que creé en el Css). Entonces no logré terminar todas las interfaces del sitio, porque también me resultaba muy complicado hacer correctamente el maquetado con Html atravez del enrutamiento con JavaScript. Me di cuenta que para proyectos como este conviene usar React o un framework que facilite el enrutamiente y el renderizado de las componentes, visto que hay tantas componentes complejas.",
 
     fifthTitleJsLang: "Drawing App",
@@ -445,6 +474,14 @@ let data = {
     desc5ModalLang: "Descripción",
     resDesc5ModalLang:
       "Este proyecto tiene un layout simple, al centro de la página hay una 'pizarra' digital, hecha con el elemento canvas de Html. En la parte de la izquierda presenta una pequeña dashboard para gestionar las diversas acciones a la hora de dibujar. En ella implemente las siguientes funciones: Linea recta, forma de rectángulo, círculo y triángulo, con la posibilidad de dibujar las figuras llenas o solo los bordes. También se puede escoger el color que se quiera y limpiar el canvas o poder salvarlo en un file y descargarlo. No es un sitio responsive pués me focalizé en practicar con JavaScript. ",
+
+    sixthTitleJsLang: "E-commerce Sneakers",
+    date6ModalLang: "Fecha",
+    type6ModalLang: "Tipo",
+    resType6ModalLang: "SPA E-commerce simple",
+    desc6ModalLang: "Descripción",
+    resDesc6ModalLang:
+      "Este proyecto es un sitio web de un pequeño comercio electrónico de zapatillas, es un sitio responsivo, con una barra de navegacióndonde se pueden seleccionar los productos que se van cambiando a través de la barra deslizante principal.Presenta tambien una seccion de compras, donde se puede elegir la talla, el color de la zapatillay abrir un modal para los inserimentos de los datos de la carta de credito.La diapositiva y la sección de compras fueron hechas gracias a JavaScript para volver las componentes dinámicas en el DOM.",
 
     //---React
     //---
